@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:background="@drawable/back_gradint"
+            android:layout_height="25pt">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:onClick="goBack"
+                android:background="@drawable/ripple_color"
+                android:clickable="true"
+                android:layout_weight="5.5">
+
+                <ImageView
+                    android:id="@+id/menuLeft"
+                    android:layout_width="11pt"
+                    android:layout_height="11pt"
+
+                    android:src="@drawable/ic_back" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:id="@+id/typeTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="@color/colorWhite"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:text="Alert History"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:layout_weight="4">
+
+                    <!--<de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="20pt"
+                        android:minWidth="40dp"
+                        android:layout_height="20pt"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_profile_demo"
+                        app:civ_border_width="2dp"
+                        android:layout_margin="10dp"
+                        app:civ_border_color="@color/colorWhite" />
+-->
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            tools:context="com.androidtutorialpoint.googlemapsnearbyplaces.MapsActivity" />
+
+        <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnRestaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nearby Restaurants" />
+
+            <Button
+                android:id="@+id/btnHospital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nearby Hospitals" />
+
+            <Button
+                android:id="@+id/btnSchool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nearby Schools" />
+
+        </LinearLayout>-->
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonMapType"
+        android:layout_width="40pt"
+        android:layout_height="15pt"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginStart="18dp"
+        android:background="@drawable/back_gradint"
+        android:text="Button"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite" />
+</RelativeLayout>

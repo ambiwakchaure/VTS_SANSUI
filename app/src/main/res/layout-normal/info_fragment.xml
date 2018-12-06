@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            card_view:cardElevation="10dp">
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10pt"
+                    android:orientation="vertical">
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:id="@+id/imeiTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5pt"
+                        android:layout_marginTop="5pt"
+                        android:drawableLeft="@drawable/ic_devic_number_24dp"
+                        android:drawablePadding="5dp"
+                        android:text="@string/imei" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.2pt"
+                        android:layout_marginTop="3pt"
+                        android:background="@color/colorHr" />
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5pt"
+                        android:layout_marginTop="5pt"
+                        android:text="@string/vehicle_name" />
+
+                    <vts.snystems.sns.vts.fonts.MyEditextNormal
+                        android:id="@+id/targetNameTxt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3.5pt"
+                        android:layout_marginTop="5pt"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_devic_number_24dp"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:hint="@string/vehicle_name"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:textSize="7pt" />
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5pt"
+                        android:layout_marginTop="5pt"
+                        android:text="@string/vehicle_number" />
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:id="@+id/deviceidTxt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3.5pt"
+                        android:layout_marginTop="5pt"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_devic_number_24dp"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:hint="@string/vehicle_number"
+                        android:lines="1"
+                        android:textSize="7pt" />
+
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5pt"
+                        android:layout_marginTop="5pt"
+                        android:text="@string/over_speed_limit" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <vts.snystems.sns.vts.fonts.MyEditextNormal
+                            android:id="@+id/overSpeedTxt"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3.5pt"
+                            android:layout_marginTop="5pt"
+                            android:layout_weight="1"
+                            android:digits="0123456789"
+                            android:drawableLeft="@drawable/ic_devic_number_24dp"
+                            android:drawablePadding="5dp"
+                            android:gravity="center_vertical"
+                            android:hint="@string/over_speed"
+                            android:imeOptions="actionDone"
+                            android:inputType="phone"
+                            android:lines="1"
+                            android:maxLength="3"
+                            android:textSize="7pt" />
+
+                        <vts.snystems.sns.vts.fonts.MyButtonNormal
+                            android:id="@+id/updateVNuBtn"
+                            android:layout_width="fill_parent"
+                            android:layout_height="15pt"
+                            android:layout_marginTop="5pt"
+                            android:layout_weight="3"
+                            android:background="@drawable/back_gradint"
+                            android:text="@string/update"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorWhite" />
+                    </LinearLayout>
+
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:id="@+id/fuelTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5pt"
+                        android:layout_marginTop="5pt"
+                        android:drawableLeft="@drawable/ic_devic_number_24dp"
+                        android:drawablePadding="5dp"
+                        android:text="@string/fuel" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.2pt"
+                        android:layout_marginTop="3pt"
+                        android:background="@color/colorHr" />
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:id="@+id/devicestatusTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5pt"
+                        android:layout_marginTop="5pt"
+                        android:drawableLeft="@drawable/ic_device_staus_24dp"
+                        android:drawablePadding="5dp"
+                        android:text="@string/vStatus" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.2pt"
+                        android:layout_marginTop="3pt"
+                        android:background="@color/colorHr" />
+
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:id="@+id/lastlocationTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5pt"
+                        android:layout_marginTop="5pt"
+                        android:drawableLeft="@drawable/ic_last_location"
+                        android:drawablePadding="5dp"
+                        android:text="@string/lastLoc" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.2pt"
+                        android:layout_marginTop="3pt"
+                        android:background="@color/colorHr" />
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:id="@+id/lasttimeTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5pt"
+                        android:layout_marginTop="5pt"
+                        android:drawableLeft="@drawable/ic_last_track_time_24dp"
+                        android:drawablePadding="5dp"
+                        android:text="@string/lastUTime" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.2pt"
+                        android:layout_marginTop="3pt"
+                        android:background="@color/colorHr" />
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:id="@+id/ignTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5pt"
+                        android:layout_marginTop="5pt"
+                        android:drawableLeft="@drawable/ic_devic_number_24dp"
+                        android:drawablePadding="5dp"
+                        android:text="@string/ignStatus" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.2pt"
+                        android:layout_marginTop="3pt"
+                        android:background="@color/colorHr" />
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:id="@+id/powerTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5pt"
+                        android:layout_marginTop="5pt"
+                        android:drawableLeft="@drawable/ic_devic_number_24dp"
+                        android:drawablePadding="5dp"
+                        android:text="@string/powerStatus" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.2pt"
+                        android:layout_marginTop="3pt"
+                        android:background="@color/colorHr" />
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:id="@+id/gpsTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5pt"
+                        android:layout_marginTop="5pt"
+                        android:drawableLeft="@drawable/ic_devic_number_24dp"
+                        android:drawablePadding="5dp"
+                        android:text="@string/gpsStatus" />
+
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="20pt" />
+
+
+                </LinearLayout>
+            </ScrollView>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/sosFloating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@android:color/transparent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="SoS"
+            android:elevation="16dp"
+            android:layout_margin="@dimen/fab_margin"
+            android:textColor="@android:color/white"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

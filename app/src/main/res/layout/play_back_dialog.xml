@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <vts.snystems.sns.vts.fonts.MyRadioButton
+            android:id="@+id/radioButtonToday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Today" />
+
+        <vts.snystems.sns.vts.fonts.MyRadioButton
+            android:id="@+id/radioButtonYesterday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Yesterday" />
+
+        <vts.snystems.sns.vts.fonts.MyRadioButton
+            android:id="@+id/radioButtonUserTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="User-Time" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/dateTimeLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="From Date:"
+                android:textColor="@color/colorBlack" />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayoutfromDate"
+                android:layout_width="80pt"
+                android:layout_height="12pt"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_shape"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textFromDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="From Time:"
+                android:textColor="@color/colorBlack" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutFromTime"
+                android:layout_width="80pt"
+                android:layout_height="12pt"
+                android:layout_margin="5dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/round_shape"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textFromTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="To Date:"
+                android:textColor="@color/colorBlack" />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayoutToDate"
+                android:layout_width="80pt"
+                android:layout_height="12pt"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_shape"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textToDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="To Time:"
+                android:textColor="@color/colorBlack" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutToTime"
+                android:layout_width="80pt"
+                android:layout_height="12pt"
+                android:layout_margin="5dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/round_shape"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textToTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

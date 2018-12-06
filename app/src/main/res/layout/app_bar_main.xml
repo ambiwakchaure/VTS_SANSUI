@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fitsSystemWindows="true"
+    tools:context=".activity.HomeActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_gradint"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="30pt"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="5.5">
+
+                    <ImageView
+                        android:id="@+id/menuLeft"
+                        android:layout_width="15pt"
+                        android:layout_height="15pt"
+                        android:clickable="true"
+                        android:layout_gravity="center_vertical"
+                        app:srcCompat="@drawable/ic_menu_white_24dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/vehicleListText"
+                            android:layout_width="wrap_content"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                            android:textColor="@color/colorWhite"
+                            android:text="Vehicle List"
+                            android:visibility="gone"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:id="@+id/toggleLayout"
+                            android:layout_width="80pt"
+                            android:layout_height="15pt"
+                            android:background="@drawable/round_button_new"
+                            android:visibility="gone"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/listView"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                android:background="@drawable/round_button"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="10pt"
+                                    android:layout_height="10pt"
+                                    app:srcCompat="@drawable/ic_chart" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/mapView"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:clickable="true"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button_new"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="10pt"
+                                    android:layout_height="10pt"
+                                    app:srcCompat="@drawable/ic_map" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/profileLayout"
+                        android:clickable="true"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:background="@drawable/ripple_color"
+                        android:layout_weight="4">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/profileImage"
+                            android:layout_width="20pt"
+                            android:minWidth="40dp"
+                            android:layout_height="20pt"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ic_profile_demo"
+                            app:civ_border_width="2dp"
+                            android:layout_margin="10dp"
+                            app:civ_border_color="@color/colorWhite" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/menuLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_menu_white_24dp" />
+
+                <LinearLayout
+                    android:layout_width="100pt"
+                    android:layout_height="15pt"
+                    android:background="@drawable/round_button_new"
+
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button_new"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_notification_24" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.8"
+                        android:background="@drawable/round_button"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_monitor" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>-->
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_navigation" />
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/fab"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="bottom|end"-->
+    <!--android:layout_margin="@dimen/fab_margin"-->
+    <!--android:src="@android:drawable/ic_dialog_email" />-->
+
+</android.support.design.widget.CoordinatorLayout>

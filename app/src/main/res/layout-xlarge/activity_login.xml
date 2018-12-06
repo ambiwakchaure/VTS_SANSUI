@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    android:orientation="vertical"
+
+    tools:context="vts.snystems.sns.vts.activity.ActivityLogin">
+
+    <ImageView
+        android:layout_width="200pt"
+        android:layout_height="60pt"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="70dp"
+        app:srcCompat="@drawable/ic_logo_benosys" />
+
+    <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/welcome"
+        android:textColor="@color/colorWhite"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_marginTop="4dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/welcome_msg"
+        android:textColor="@color/colorWhite"
+        android:textSize="35sp" />
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="60dp"
+        card_view:cardElevation="20dp">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <vts.snystems.sns.vts.fonts.MyEditextNormal
+                        android:id="@+id/usernameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="15pt"
+                        android:hint="@string/username"
+                        android:imeOptions="actionNext"
+                        android:inputType="text|textNoSuggestions"
+                        android:textColor="@color/colorBlack"
+
+                        android:textSize="20sp" />
+
+                    <vts.snystems.sns.vts.fonts.MyEditestPass
+                        android:id="@+id/passwordEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="15pt"
+                        android:hint="@string/pass"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword|textNoSuggestions"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20sp"
+                        app:drawable_hide="@drawable/ic_visibility_black_36dp"
+                        app:drawable_show="@drawable/ic_visibility_off_black_36dp" />
+
+                    <vts.snystems.sns.vts.fonts.MyCheckbox
+                        android:id="@+id/rememberPasswordCheckBox"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/editTextPassword"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="15pt"
+                        android:text="Keep me logged in"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20sp" />
+
+
+                    <vts.snystems.sns.vts.fonts.MyButtonNormal
+
+                        android:id="@+id/loginButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="15pt"
+                        android:background="@drawable/back_gradint"
+                        android:baselineAligned="false"
+
+                        android:text="@string/login"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="4pt" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/lin_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_gradint"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="25pt">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="5.5"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="goBack">
+
+                <ImageView
+                    android:id="@+id/menuLeft"
+                    android:layout_width="11pt"
+                    android:layout_height="11pt"
+
+                    android:src="@drawable/ic_back" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:id="@+id/txtDeviceTypes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Device Types"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorWhite" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="4"
+                    android:gravity="center">
+
+                    <!--<de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="20pt"
+                        android:minWidth="40dp"
+                        android:layout_height="20pt"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_profile_demo"
+                        app:civ_border_width="2dp"
+                        android:layout_margin="10dp"
+                        app:civ_border_color="@color/colorWhite" />
+-->
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/searchRl"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/back_gradint"
+            android:minHeight="?attr/actionBarSize">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="15pt"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/background_serch_alert"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <vts.snystems.sns.vts.fonts.MyEditextNormal
+                    android:id="@+id/serachDataEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="7"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_search_black_18dp"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_horizontal|center_vertical|start"
+                    android:hint="Search"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="#80FFFFFF"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/vehicleListRecycle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"></android.support.v7.widget.RecyclerView>
+
+    <include layout="@layout/layout_no_data_waring"></include>
+
+</LinearLayout>

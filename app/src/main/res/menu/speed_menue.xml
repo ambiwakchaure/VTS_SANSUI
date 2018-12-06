@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/speedOne"
+        android:title="x1" />
+    <item
+        android:id="@+id/speedTwo"
+        android:title="x2" />
+    <item
+        android:id="@+id/speedThree"
+        android:title="x3" />
+    <item
+        android:id="@+id/speedFour"
+        android:title="x4" />
+    <item
+        android:id="@+id/speedFive"
+        android:title="x5" />
+    <item
+        android:id="@+id/speedSix"
+        android:title="x6" />
+    <item
+        android:id="@+id/speedSeven"
+        android:title="x7" />
+    <item
+        android:id="@+id/speedEight"
+        android:title="x8" />
+</menu>

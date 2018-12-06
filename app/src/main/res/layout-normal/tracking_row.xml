@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="10dp"
+        card_view:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="4"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_vehicles"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25pt"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_weight="2"
+                        app:srcCompat="@drawable/ic_car" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                            android:id="@+id/vNumberTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/vehicle_number"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                        <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                            android:id="@+id/vTargetName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2pt"
+                            android:text="Target Name" />
+                    </LinearLayout>
+
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:id="@+id/vCurrAdress"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="@string/address" />
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:id="@+id/vLastDt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/last_update_dt" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="3pt" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="17pt"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/liveTrackingLi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="0.1pt"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimaryDark"
+                    android:clickable="true"
+                    android:gravity="center">
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_live_track"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/live_tracking"
+                        android:textColor="@color/colorWhite" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vStatusColLi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="0.1pt"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center">
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:id="@+id/vStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="Vehicle Status"
+                        android:textColor="@color/colorWhite" />
+
+                </LinearLayout>
+                <!--<TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Live Tracking"
+                    android:layout_marginRight="0.1pt"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:textAllCaps="false"
+                    android:drawableLeft="@drawable/ic_live_track"
+                    android:textColor="@color/colorWhite"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Vehicle Status"
+                    android:layout_marginLeft="0.1pt"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:layout_weight="1"/>-->
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

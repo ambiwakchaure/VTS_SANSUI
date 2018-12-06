@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:gauge="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map_playback"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:context=".playback.activity.ActivityPlaybackTrackInfo" />
+
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/btn_map_type"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_below="@+id/btn_map_signal"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:visibility="gone"-->
+        <!--android:background="@drawable/background_edittext_1"-->
+        <!--android:src="@drawable/ic_details" />-->
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/btn_map_signal"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:background="@drawable/background_edittext_1"-->
+        <!--android:src="@drawable/ic_details" />-->
+
+    <LinearLayout
+        android:id="@+id/mainLinearLayout"
+        android:layout_width="30pt"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="10pt"
+        android:background="@drawable/round_trans"
+        android:layout_marginLeft="10pt"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/buttonSpeed"
+            android:layout_width="30pt"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="3pt"
+                android:src="@drawable/ic_av_timer_black_36dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorWhite"
+                android:text="Speed" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonStart"
+            android:layout_width="30pt"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2pt"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1pt"
+                android:layout_marginTop="2pt"
+                android:layout_marginLeft="3pt"
+                android:layout_marginRight="3pt"
+                android:background="@color/colorWhite"/>
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2pt"
+                android:gravity="center_horizontal"
+                android:src="@drawable/ic_play_circle_filled_black_36dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:gravity="center_horizontal"
+                android:text="Start" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonStop"
+            android:layout_width="30pt"
+            android:clickable="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2pt"
+            android:gravity="center"
+
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1pt"
+                android:layout_marginTop="2pt"
+                android:layout_marginLeft="3pt"
+                android:layout_marginRight="3pt"
+                android:background="@color/colorWhite"/>
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2pt"
+                android:gravity="center_horizontal"
+                android:src="@drawable/ic_pause_circle_filled_black_36dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+
+                android:textColor="@color/colorWhite"
+                android:text="Stop" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="3pt"/>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonSpeedLive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textAllCaps="false"
+        android:visibility="gone"
+
+        android:text="Speed" />
+
+    <Button
+        android:id="@+id/buttonVehiclePos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:visibility="gone"
+
+        android:layout_below="@+id/buttonSpeedLive"
+        android:text="Vehicle" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_weight="0.75">
+
+        <de.nitri.gauge.Gauge
+            android:id="@+id/gauge1"
+            android:layout_width="45pt"
+            android:layout_height="45pt"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.75"
+            gauge:labelTextSize="17"
+            gauge:lowerText="0.0 kmph"
+            gauge:maxValue="100"
+            gauge:minValue="0"
+            gauge:totalNicks="120"
+            gauge:upperText=""
+            gauge:valuePerNick="1" />
+
+        <vts.snystems.sns.vts.fonts.MyButtonDigital
+            android:id="@+id/buttonDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/odo_meter"
+            android:text="0.0 Km"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="10pt" />
+
+    </LinearLayout>
+
+
+
+
+    <!--<TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed"
+        android:layout_alignStart="@+id/buttonSpeed"
+        android:layout_below="@+id/buttonSpeed"/>
+
+
+    <ImageView
+        android:id="@+id/buttonStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/buttonSpeed"
+        android:layout_below="@+id/buttonSpeed"
+        android:layout_marginTop="2pt"
+        android:src="@drawable/ic_model_black_24dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/buttonStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/buttonSpeed"
+        android:layout_below="@+id/buttonStart"
+        android:layout_marginTop="2pt"
+        android:src="@drawable/ic_model_black_24dp" />-->
+
+</RelativeLayout>

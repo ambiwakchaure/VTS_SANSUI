@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/searchRela"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/back_gradint"
+            android:minHeight="?attr/actionBarSize"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="15pt"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/background_serch_alert"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+
+                    <vts.snystems.sns.vts.fonts.MyEditextNormal
+                        android:id="@+id/serachDataEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="7"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_search_black_18dp"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_horizontal|center_vertical|start"
+                        android:hint="Search"
+                        android:singleLine="true"
+                        android:imeOptions="actionDone"
+                        android:paddingLeft="4pt"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="#80FFFFFF"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+
+                <!--<TextView
+                    android:id="@+id/txt_spin_list"
+                    android:layout_width="10pt"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_white_24dp"
+                    android:entries="@array/list"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="Duration\n demo"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="5pt" />
+                <View
+                    android:layout_width="0.4pt"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:background="@color/colorWhite"
+                    android:gravity="center_horizontal|center_vertical"
+                    />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:layout_marginLeft="5dp"
+                    android:drawableLeft="@drawable/ic_search_white_24dp"
+                    android:drawablePadding="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="#80FFFFFF"
+                    android:textSize="15dp"
+                    android:gravity="center_horizontal|center_vertical|start"
+                    android:hint="Search"
+                    android:textColor="@color/colorWhite"
+                     />-->
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/alertRecycle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <include layout="@layout/alert_not_found" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/sosFloating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@android:color/transparent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/fab_margin"
+            android:elevation="16dp"
+            android:text="SoS"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

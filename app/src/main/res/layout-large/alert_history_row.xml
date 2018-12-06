@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="10dp"
+        card_view:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="1pt"
+
+
+            android:weightSum="10">
+
+            <ImageView
+                android:id="@+id/img_vehicles"
+                android:layout_width="25pt"
+                android:layout_height="35pt"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_car" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:orientation="vertical"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                        android:id="@+id/txt_vehicles_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_vertical"
+                        android:text="MH12 8574"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorText"
+                        android:textStyle="bold" />
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:id="@+id/vTargetName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2pt"
+                        android:text="Target Name"
+                        android:textColor="@color/colorText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5pt"
+                    android:orientation="horizontal"
+                    android:weightSum="9"
+                     >
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:id="@+id/txtImei"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:text="8523652255"
+                        android:textSize="8pt"
+                        android:textColor="@color/colorText" />
+
+                   <!-- <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:id="@+id/txtDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.5"
+                        android:textSize="8pt"
+                        android:text="30 Jun,2018"
+                        android:textColor="@color/colorText" />-->
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:id="@+id/txtSos"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="6"
+                        android:textSize="8pt"
+                        android:textColor="@color/colorText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5pt"
+                    android:weightSum="9"
+                     >
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:text="IMEI"
+                        android:textColor="@color/colorText"
+                        android:textSize="8pt"
+                        android:textStyle="bold" />
+
+                    <!--<vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.5"
+                        android:text="Date Time"
+                        android:textColor="@color/colorText"
+                        android:textSize="8pt"
+                        android:textStyle="bold" />-->
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="SOS"
+                        android:textColor="@color/colorText"
+                        android:textSize="8pt"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8pt"
+                    android:orientation="horizontal"
+                    android:weightSum="9">
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:id="@+id/txtOverSpeed"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="5"
+                        android:textSize="8pt"
+                        android:textColor="@color/colorText" />
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:id="@+id/txtPowerCut"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="7"
+                        android:textSize="8pt"
+                        android:textColor="@color/colorText" />
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:id="@+id/txtLowBattery"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="6"
+                        android:textSize="8pt"
+                        android:textColor="@color/colorText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5pt"
+                    android:weightSum="9">
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Over Speed"
+                        android:textColor="@color/colorText"
+                        android:textSize="8pt"
+                        android:textStyle="bold" />
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Power cut"
+                        android:textColor="@color/colorText"
+                        android:textSize="8pt"
+                        android:textStyle="bold" />
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Low Battery"
+                        android:textColor="@color/colorText"
+                        android:textSize="8pt"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="3pt"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

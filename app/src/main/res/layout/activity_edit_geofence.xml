@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_geofence"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".geofence.activity.ActivityEditGeofence">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="25pt"
+        android:background="@drawable/back_gradint">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5.5"
+            android:background="@drawable/ripple_color"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="goBack">
+
+            <ImageView
+                android:id="@+id/menuLeft"
+                android:layout_width="11pt"
+                android:layout_height="11pt"
+
+                app:srcCompat="@drawable/ic_back" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edite_geofence"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="4"
+                android:gravity="center">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <fragment xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map_geo_fence_edit"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.sample.sishin.maplocation.MapsActivity" />
+
+            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                android:id="@+id/geofenceAddressTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="25pt"
+                android:drawableLeft="@drawable/ic_location_on_white_24dp"
+                android:textColor="@color/colorWhite"
+                android:drawablePadding="5dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"
+                android:background="@color/colorPrimaryDark"
+                android:padding="5dp"
+                android:text="Address" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#59000000"
+            android:orientation="vertical">
+
+            <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5pt"
+                android:layout_marginTop="3pt"
+                android:text="@string/edit_radius"
+                android:textColor="@color/colorWhite"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textStyle="bold" />
+
+            <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                android:id="@+id/radiusSeekbar_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5pt"
+                android:layout_marginTop="3pt"
+                app:dsb_indicatorColor="@color/editextBottomLine"
+                app:dsb_indicatorSeparation="5dp"
+                app:dsb_max="5"
+                app:dsb_min="1"
+                app:dsb_progressColor="@color/editextBottomLine"
+                app:dsb_rippleColor="@color/editextBottomLine"
+                app:dsb_scrubberHeight="2pt"
+                app:dsb_thumbSize="10pt"
+                app:dsb_trackColor="@color/editextBottomLine" />
+
+            <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                android:id="@+id/edit_geo_radius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5pt"
+                android:layout_marginTop="3pt"
+                android:drawablePadding="4dp"
+                android:text="Radius"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3pt"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

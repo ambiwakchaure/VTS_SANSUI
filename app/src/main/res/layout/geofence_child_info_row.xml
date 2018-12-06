@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <!--<LinearLayout
+        android:id="@+id/geoNotFoundLinear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:focusable="false"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="4pt"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Geofence not created, click create to create geofence for this vehicle." />
+
+                <vts.snystems.sns.vts.fonts.MyButtonNormal
+                    android:id="@+id/btn_geo_fence_create"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15pt"
+                    android:layout_marginTop="5pt"
+                    android:background="@drawable/round_sos"
+                    android:text="Create"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>-->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardVievGeofence"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center"
+
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                android:id="@+id/txt_geo_fence_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5pt"
+                android:layout_weight="1"
+                android:text="Geofence Name"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+            <View
+                android:layout_width="fill_parent"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="3pt"
+                android:layout_height="0.1pt"/>
+
+            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                android:id="@+id/txt_geo_fence_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5pt"
+                android:layout_marginTop="3pt"
+                android:drawableLeft="@drawable/ic_last_location"
+                android:drawablePadding="5dp"
+                android:layout_marginRight="2pt"
+                android:layout_weight="1"
+                android:text="Address" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3pt"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:id="@+id/infoTextIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5pt"
+                        android:text="@string/in_alert"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/switch_arrive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5pt"
+                        android:layout_marginTop="3pt"
+                        android:clickable="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:id="@+id/infoTextOut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/out_alert"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/switch_depart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3pt"
+                        android:clickable="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radius"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:id="@+id/geofenceRadious"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3pt"
+                        android:text="5" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3pt"
+                android:orientation="horizontal">
+
+                <vts.snystems.sns.vts.fonts.MyButtonNormal
+                    android:id="@+id/btn_geo_fence_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="15pt"
+                    android:layout_marginRight="1pt"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="@string/view"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite" />
+
+                <vts.snystems.sns.vts.fonts.MyButtonNormal
+                    android:id="@+id/btn_geo_fence_delete"
+                    android:layout_width="fill_parent"
+                    android:layout_height="15pt"
+                    android:layout_marginLeft="1pt"
+                    android:layout_weight="1"
+                    android:background="@color/textColor"
+                    android:text="@string/delete"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/dateLinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="20pt"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="@color/colorPrimaryDark">
+
+            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                android:id="@+id/dateDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorWhite"
+                android:text="Date"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/vehicleListRecycle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <include
+            layout="@layout/layout_no_data_waring" />
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

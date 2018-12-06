@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rel_no_data"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="fill_parent">
+    <ImageView
+        android:id="@+id/img_no_data"
+        android:layout_width="45pt"
+        android:layout_height="45pt"
+        app:srcCompat="@drawable/ic_no_data_waring"/>
+
+    <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+        android:id="@+id/txt_error_no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Data Found!"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="@color/rippleColor" />
+
+    <vts.snystems.sns.vts.fonts.MyButtonNormal
+        android:id="@+id/buttonRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="15pt"
+        android:layout_below="@+id/txt_error_no_data"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/back_gradint"
+        android:text="@string/refresh"
+        android:layout_marginTop="3pt"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite" />
+</LinearLayout>

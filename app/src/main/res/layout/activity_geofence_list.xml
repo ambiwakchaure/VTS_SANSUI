@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".geofence.activity.ActivityGeofenceList">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="25pt"
+        android:background="@drawable/back_gradint">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5.5"
+            android:background="@drawable/ripple_color"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="goBack">
+
+            <ImageView
+                android:id="@+id/menuLeft"
+                android:layout_width="11pt"
+                android:layout_height="11pt"
+                app:srcCompat="@drawable/ic_back" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle List"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="4"
+                android:gravity="center">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/geofenceListExp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#efefef"
+        android:dividerHeight="0dp"
+        android:groupIndicator="@null"
+        android:indicatorLeft="180dp"
+
+        android:indicatorRight="500dp" />
+
+</LinearLayout>

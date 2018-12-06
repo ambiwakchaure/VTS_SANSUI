@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100pt"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="150pt"
+                android:layout_height="100pt"
+                android:layout_margin="5pt"
+                app:srcCompat="@drawable/ic_logo_orange" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1pt"
+            android:layout_marginLeft="3pt"
+            android:layout_marginRight="3pt"
+            android:background="@color/colorPrimaryDark" />
+
+        <LinearLayout
+            android:id="@+id/dashboardMenu"
+            android:layout_width="fill_parent"
+            android:layout_height="25pt"
+            android:background="@drawable/ripple_color"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15pt"
+                android:text="@string/dashboard"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/colorBlack" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/mapViewMenu"
+            android:layout_width="fill_parent"
+            android:layout_height="25pt"
+            android:background="@drawable/ripple_color"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:text="@string/map_view"
+                android:layout_marginLeft="15pt"
+
+                android:textColor="@color/colorBlack" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/vehicleStatuswMenu"
+            android:layout_width="fill_parent"
+            android:layout_height="25pt"
+            android:background="@drawable/ripple_color"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:text="@string/vehicle_status"
+                android:layout_marginLeft="15pt"
+
+                android:textColor="@color/colorBlack" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/distanceSumMenu"
+            android:layout_width="fill_parent"
+            android:layout_height="25pt"
+            android:background="@drawable/ripple_color"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15pt"
+                android:text="@string/distance_summary"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/colorBlack" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/vehicleSummaryMenu"
+            android:layout_width="fill_parent"
+            android:layout_height="25pt"
+            android:background="@drawable/ripple_color"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/v_summary"
+                android:layout_marginLeft="15pt"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/colorBlack" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/alertHistoryMenu"
+            android:layout_width="fill_parent"
+            android:layout_height="25pt"
+            android:background="@drawable/ripple_color"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15pt"
+                android:text="@string/aHist"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/colorBlack" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/immobilseMenu"
+            android:layout_width="fill_parent"
+            android:layout_height="25pt"
+            android:background="@drawable/ripple_color"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15pt"
+                android:text="Immobiliser"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/colorBlack" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/aboutUsMenu"
+            android:layout_width="fill_parent"
+            android:layout_height="25pt"
+            android:background="@drawable/ripple_color"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15pt"
+                android:text="@string/about"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/colorBlack" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/faqMenu"
+            android:layout_width="fill_parent"
+            android:layout_height="25pt"
+            android:background="@drawable/ripple_color"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15pt"
+                android:text="@string/faq"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/colorBlack" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/logoutMenu"
+            android:layout_width="fill_parent"
+            android:layout_height="25pt"
+            android:background="@drawable/ripple_color"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15pt"
+                android:text="@string/logout"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/colorBlack" />
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:id="@+id/startNotification"
+            android:layout_width="fill_parent"
+            android:layout_height="35pt"
+            android:background="@drawable/ripple_color"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15pt"
+                android:text="Start"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/colorBlack" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/stopNotification"
+            android:layout_width="fill_parent"
+            android:layout_height="35pt"
+            android:background="@drawable/ripple_color"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+
+            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15pt"
+                android:text="Stop"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/colorBlack" />
+
+        </LinearLayout>-->
+
+    </LinearLayout>
+
+</LinearLayout>

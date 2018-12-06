@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="25pt"
+        android:background="@drawable/back_gradint">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5.5"
+            android:background="@drawable/ripple_color"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="goBack">
+            <ImageView
+                android:id="@+id/menuLeft"
+                app:srcCompat="@drawable/ic_back"
+                android:layout_width="11pt"
+                android:layout_height="11pt" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="4"
+                android:gravity="center">
+
+                <!--<de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="20pt"
+                    android:minWidth="40dp"
+                    android:layout_height="20pt"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/ic_profile_demo"
+                    app:civ_border_width="2dp"
+                    android:layout_margin="10dp"
+                    app:civ_border_color="@color/colorWhite" />
+-->
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5pt"
+                android:orientation="vertical">
+
+
+                <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/overviewd"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

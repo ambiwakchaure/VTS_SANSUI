@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:gauge="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_gradint">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="5.5"
+                    android:background="@drawable/ripple_color"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="goBack">
+
+                    <ImageView
+                        android:id="@+id/menuLeft"
+                        android:layout_width="11pt"
+                        android:layout_height="11pt"
+
+                        app:srcCompat="@drawable/ic_back" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                            android:id="@+id/vNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MH08 7596"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold" />
+
+                        <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                            android:id="@+id/lastDateTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12 Jul, 2018 02:35 PM"
+
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+
+                            android:textColor="@color/colorWhite" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="4"
+                        android:gravity="center">
+
+                        <!--<de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="20pt"
+                            android:minWidth="40dp"
+                            android:layout_height="20pt"
+                            android:layout_alignParentRight="true"
+                            app:srcCompat="@drawable/ic_profile_demo"
+                            app:civ_border_width="2dp"
+                            android:layout_margin="10dp"
+                            app:civ_border_color="@color/colorWhite" />
+        -->
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:id="@+id/map_playback"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        tools:context=".playback.activity.ActivityPlaybackTrackInfo" />
+
+
+                    <Button
+                        android:id="@+id/buttonSpeedLive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Speed"
+                        android:textAllCaps="false"
+
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/buttonVehiclePos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/buttonSpeedLive"
+                        android:text="Vehicle"
+
+                        android:textAllCaps="false"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/speedoDistanceLAyout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.75"
+
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <de.nitri.gauge.Gauge
+                            android:id="@+id/gauge1"
+                            android:layout_width="90pt"
+                            android:layout_height="90pt"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="0.75"
+                            gauge:labelTextSize="17"
+                            gauge:lowerText="0.0 kmph"
+                            gauge:maxValue="100"
+                            gauge:minValue="0"
+                            gauge:totalNicks="120"
+                            gauge:upperText=""
+                            gauge:valuePerNick="1" />
+
+                        <vts.snystems.sns.vts.fonts.MyButtonDigital
+                            android:id="@+id/buttonDistance"
+                            android:layout_width="80pt"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/odo_meter"
+                            android:text="0.0 Km"
+                            android:textAllCaps="false"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="10pt" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="55pt"
+                        android:layout_height="30pt"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="17dp"
+                        android:layout_marginStart="14dp"
+                        android:orientation="horizontal">
+
+                        <vts.snystems.sns.vts.fonts.MyButtonNormal
+                            android:id="@+id/buttonMapType"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/back_gradint"
+                            android:text="Normal"
+                            android:textAllCaps="false"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/colorWhite" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/speedoLayout"
+                        android:layout_width="110pt"
+                        android:layout_height="60pt"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="gone"
+                        android:background="@drawable/ic_onenormal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6pt"
+                            android:orientation="horizontal">
+
+                            <vts.snystems.sns.vts.fonts.MyTextViewDigital
+                                android:id="@+id/playbackSpeedText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5pt"
+                                android:paddingTop="5dp"
+                                android:text="000"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="25pt"
+                                android:textStyle="bold" />
+
+                            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_marginLeft="2pt"
+                                android:text="km/h"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/colorPrimaryDark" />
+                        </LinearLayout>
+
+                        <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                            android:id="@+id/playbackDistance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0000 km"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <FrameLayout
+                        android:id="@+id/speedLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="gone"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="5pt"
+                        android:layout_marginTop="5pt">
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/speedFlotButton"
+                            android:layout_width="25pt"
+                            android:layout_height="25pt"
+                            android:clickable="true"
+                            android:onClick="speedSet"
+                            android:src="@android:color/transparent" />
+
+                        <TextView
+                            android:id="@+id/speedTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:elevation="16dp"
+                            android:text="x1"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@android:color/white" />
+                    </FrameLayout>
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:id="@+id/playbackDateTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15pt"
+                        android:gravity="center"
+                        android:layout_marginLeft="5pt"
+                        android:visibility="gone"
+                        android:layout_marginTop="5pt"
+                        android:paddingLeft="5pt"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorText"
+                        android:layout_alignParentStart="true"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:layout_alignParentTop="true"
+                        android:text="15 Sep, 2018   05:13:13   " />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

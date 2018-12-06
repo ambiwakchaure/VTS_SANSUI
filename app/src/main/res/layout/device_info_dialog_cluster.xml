@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="100pt"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="15pt"
+            android:gravity="center"
+            android:background="@color/colorPrimaryDark">
+            <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                android:id="@+id/vNumberTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3pt"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorWhite"
+                android:text="Vehicle Number"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+        <vts.snystems.sns.vts.fonts.MyTextViewNormal
+            android:id="@+id/deviceStatusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/ic_device_staus_24dp"
+            android:drawablePadding="4dp"
+            android:text="Device Status"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vSpeedTextView"/>
+
+        <vts.snystems.sns.vts.fonts.MyTextViewNormal
+            android:id="@+id/lastLocationTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Address"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:drawableLeft="@drawable/ic_last_location"
+            android:drawablePadding="4dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coOrdinateTextView"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

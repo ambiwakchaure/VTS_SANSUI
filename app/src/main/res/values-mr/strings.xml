@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about">विषयी</string>
+    <string name="running">वाहन चालू आहे</string>
+    <string name="idle">थांबलेले वाहन</string>
+    <string name="parking">वाहन पार्क केलेले</string>
+    <string name="offline">ऑफ़लाइन</string>
+    <string name="alerts">अलर्ट</string>
+    <string name="language">भाषा</string>
+    <string name="tVehicles">एकूण वाहन</string>
+    <string name="dashboard">डॅशबोर्ड</string>
+    <string name="aHist">अॅलर्ट इतिहास</string>
+    <string name="faq">वारंवार विचारले जाणारे प्रश्न</string>
+    <string name="logout">बाहेर</string>
+    <string name="logout_msg">आपण लॉगआउट करू इच्छिता?</string>
+    <string name="vList">वाहन सूची</string>
+    <string name="search">शोध</string>
+    <string name="stop">थांबलेले</string>
+    <string name="tStop">एकूण थांबा</string>
+    <string name="avgSpeed">सरासरी गती</string>
+    <string name="maxSpeed">कमाल स्पीड</string>
+    <string name="cancel">रद्द करा</string>
+    <string name="speed">गती</string>
+    <string name="odometer">ओडोमीटर</string>
+    <string name="fuel">इंधन</string>
+    <string name="ign">आयजीएन</string>
+    <string name="power">पॉवर</string>
+    <string name="gps">जीपीएस</string>
+    <string name="distance">अंतर</string>
+    <string name="duration">कालावधी</string>
+    <string name="imei">IMEI : </string>
+    <string name="VNumber">वाहन नंबर : </string>
+    <string name="vStatus">वाहन स्थिती : </string>
+    <string name="lastLoc">अंतिम स्थान : </string>
+    <string name="lastUTime">अंतिम अद्यतनित वेळ : </string>
+    <string name="ignStatus">आयजीएन स्थिती : </string>
+    <string name="powerStatus">पॉवर स्थिती : </string>
+    <string name="gpsStatus">जीपीएस स्थिती : </string>
+    <string name="on">चालू</string>
+    <string name="off">बंद</string>
+    <string name="year">वर्ष</string>
+    <string name="setting">सेटिंग</string>
+    <string name="sAlerts">अलर्ट निवडा</string>
+    <string name="ok">ठीक आहे</string>
+    <string name="low_battery">बॅटरी कमी</string>
+    <string name="overspeed">अति वेग</string>
+    <string name="sos">एसओएस</string>
+    <string name="powercut">वीज कट</string>
+    <string name="ignition">Ignition</string>
+    <string name="english">इंग्रजी</string>
+    <string name="hindi">हिंदी</string>
+    <string name="marathi">मराठी</string>
+    <string name="all">All</string>
+    <string name="vehicle_summary">Travel Summary</string>
+    <string name="v_summary">प्रवास सारांश</string>
+    <string name="vehicle_number">वाहन नंबर*</string>
+    <string name="address">पत्ता</string>
+    <string name="last_update_dt">Last Update Dt</string>
+    <string name="tracking_v">Tracking</string>
+    <string name="s_st">Vehicle Status</string>
+    <string name="distance_summary">अंतर सारांश</string>
+    <string name="map_view">नकाशा दृश्य</string>
+    <string name="first_name">पहिले नाव</string>
+    <string name="last_name">आडनाव</string>
+    <string name="email">ईमेल</string>
+    <string name="mobile">मोबाइल नंबर</string>
+    <string name="today">आज</string>
+    <string name="yesterday">काल</string>
+    <string name="week">आठवडा</string>
+    <string name="day_before">परवा</string>
+    <string name="month">महिना</string>
+    <string name="faq1">This caused by either of two potential issues:
+\n1.	The device is not transmitting
+\n\t\ta.	Poor wireless data coverage
+\n\t\tb.	Poor antenna location resulting in deteriorated wireless data signal.
+\n\t\tc.	Antenna not plugged into the device.
+\n2.	The GPS unit cannot see the sky.
+\n\t\ta.	Antenna facing downward.
+\n\t\tb.	Poor antenna placement.
+\n\t\tc.	Antenna is placed too far below the dash to have a good view of the sky.
+\n\t\td.	On a new install, it may take several minutes for the GPS to establish location.
+</string>
+    <string name="faq2">The GPS unit does not have a good view of the sky.
+\na.	When the vehicles are parked facing tall buildings (or in indoor garages or under metal awnings) large portions of the sky are often obscured.
+\nb.	Antenna placement is critical to ensure reliable and accurate operation.
+</string>
+    <string name="faq3">In almost every case, this is because it’s a newly installed device and the unit hasn’t yet transmitted its first packet of data (and thus cannot appear on the map because we don’t yet know its location). It generally takes approx. 5 minutes after a new device has been powered up to begin transmitting.</string>
+
+
+
+
+    <string-array name="list">
+        <item>All</item>
+        <item>Running</item>
+        <item>Idle</item>
+        <item>Offline</item>
+        <item>Parking</item>
+    </string-array>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="last_parking">शेवटची पार्किंग</string>
+    <string name="over_speed">Over Speed</string>
+    <string name="vehicle_status">वाहन स्थिती</string>
+    <string name="dashboard_preference">डॅशबोर्ड प्राधान्य</string>
+    <string name="live_tracking">लाइव्ह ट्रॅकिंग</string>
+    <string name="last_distance">शेवटचे अंतर</string>
+    <string name="last_duration">शेवटचा कालावधी</string>
+
+    <string name="normal">सामान्य</string>
+    <string name="satellite">साटलाईट</string>
+    <string name="hybrid">हायब्रीड</string>
+    <string name="run_not_found">क्षमस्व! चालणारे वाहन आढळले नाही</string>
+    <string name="idle_vehicle">क्षमस्व! थांबलेले वाहन आढळले नाही</string>
+    <string name="parking_vehicle">क्षमस्व! पार्किंगची गाडी आढळली नाही</string>
+    <string name="off_vehicle">क्षमस्व! ऑफलाइन वाहन आढळले नाही</string>
+    <string name="vehicle_name">वाहनचे नाव*</string>
+    <string name="over_speed_limit">स्पीड मर्यादा*</string>
+    <string name="update">अद्यतन करा</string>
+    <string name="val_vnumber">चेतावणी! वाहनचे नाव प्रविष्ट करा</string>
+    <string name="val_vname">चेतावणी! वाहन नंबर प्रविष्ट करा</string>
+    <string name="val_spped_lim">चेतावणी! गति सीमा टाका</string>
+    <string name="val_inval_ov">चेतावणी! गती मर्यादेपेक्षा अमान्य</string>
+    <string name="inval_num">चेतावणी! अवैध वाहन नंबर</string>
+    <string name="inval_length">चेतावणी! अवैध वाहन नंबर लांबी</string>
+    <string name="success_vn">यशस्वी! वाहन तपशील अद्ययावत</string>
+    <string name="please_wait">कृपया थांबा...</string>
+    <string name="today_playback">आजचा प्लेबॅक सापडला नाही</string>
+    <string name="yes_play">कालचा प्लेबॅक सापडला नाही</string>
+    <string name="play_day">परवाचा प्लेबॅक सापडला नाही</string>
+    <string name="tal_hist">आजचा अलर्टस इतिहास आढळला नाही</string>
+    <string name="yal_history">कालचा चेतावणी इतिहास सापडला नाही</string>
+    <string name="wal_hist">साप्ताहिक अॅलर्ट इतिहास सापडला नाही</string>
+    <string name="t_dsum">आजचा अंतर सारांश आढळला नाही</string>
+    <string name="y_dsum">कालचा अंतर सारांश आढळला नाही</string>
+    <string name="m_dsum">मासिक अंतर सारांश आढळला नाही</string>
+    <string name="t_trsum">आजचा प्रवास सारांश आढळला नाही</string>
+    <string name="ys_trsum">कालचा  प्रवास सारांश आढळला नाही</string>
+    <string name="week_trsum">साप्ताहिक प्रवास सारांश आढळला नाही</string>
+    <string name="change_photo">फोटो बदला</string>
+    <string name="save_changes">सेव्ह करा</string>
+    <string name="profile">प्रोफाइल</string>
+    <string name="overviewd">Benosys Pvt. Ltd. is a company engaged in design and development of innovative products and applications in the electronics industry. We are the global provider of collaborative IOT business solutions. With a legacy of 25 years in the industry, Benosys has come up with collaborative IOT business solutions, Real Time Tracking, Smart Modules and highly advanced electronic components. We deliver efficient, cost-effective solutions to our clients who look to adopt IOT practices to give their product and service offerings a quantum leap.</string>
+    <string name="add_sost">एसओएस संपर्क जोडा</string>
+    <string name="sos_add">एसओएस संपर्क सापडला नाही, एसओएस संपर्क जोडण्यासाठी ओके क्लिक करा</string>
+
+    <string name="geofence">जीओफेन्स</string>
+    <string name="view">पहा</string>
+    <string name="delete">हटवा</string>
+    <string name="in_alert">इन अलर्ट</string>
+    <string name="out_alert">आऊट अलर्ट</string>
+    <string name="radius">रेडियस</string>
+    <string name="d_geofence">भौगोलिक माहिती सापडली नाही</string>
+    <string name="select_location">स्थान निवडा</string>
+    <string name="geo_perm">आपण या स्थानावर जीओफेन्स तयार करू इच्छिता</string>
+    <string name="c_loc">स्थान बदला</string>
+    <string name="set_geofence">जीओफेन्स सेट करा</string>
+    <string name="geofence_name">जीओफेन्स नाव</string>
+    <string name="home">घर</string>
+    <string name="school">शाळा</string>
+    <string name="work">काम</string>
+    <string name="s_go">आपण 3 जीओफेंस पेक्षा अधिक जोडू शकत नाही</string>
+    <string name="edite_geofence">एडिट जीओफेन्स</string>
+    <string name="edit_radius">एडिट रेडियस</string>
+    <string name="llgout">आपण लॉगआउट करू इच्छिता</string>
+    <string name="c_app">आपण ऐप बंद करू इच्छिता?</string>
+    <string name="ex">बाहेर पडा</string>
+    <string name="cancel_l">रद्द करा</string>
+    <string name="oops_alert_not_found">अलर्ट सापडला नाही</string>
+    <string name="oops_live_status_not_found">लाइव स्थिती आढळली नाही</string>
+    <string name="req_t">पुन्हा प्रयत्न करा !</string>
+    <string name="refresh">रीफ्रेश करा</string>
+    <string name="tout">टाइमआउट</string>
+    <string name="n_conn">कनेक्शन नाही</string>
+    <string name="check_wi">कृपया इंटरनेट कनेक्शन किंवा वायफाय कनेक्शन तपासा.</string>
+    <string name="in_image">चुकीचा इमेज स्वरूप सापडला</string>
+
+    <string name="time_duration">प्रारंभ तारीख</string>
+    <string name="end_duration">शेवटची तारीख</string>
+    <string name="distance_travelled">Distance Travelled</string>
+    <string name="start_location">प्रारंभ स्थान</string>
+    <string name="end_loaction">शेवटचे स्थान</string>
+    <string name="trtime">अंतिम ट्रॅक तारीख वेळ</string>
+
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="3pt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        card_view:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:weightSum="10">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:orientation="vertical">
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:id="@+id/txt_start_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_horizontal|center_vertical|start"
+                        android:text="Time Duration : 19 jul 18,06:42 AM"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorText"
+                        android:textSize="6pt" />
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:id="@+id/txt_end_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_horizontal|center_vertical|start"
+                        android:text="Time Duration : 19 jul 18,06:42 AM"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorText"
+                        android:textSize="6pt" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/btn_playback"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_weight="2"
+
+                    android:clickable="true"
+                    card_view:srcCompat="@drawable/ic_play_arrow_green_24dp" />
+            </LinearLayout>
+
+
+            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                android:id="@+id/txt_dist_travel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="8"
+
+                android:gravity="center_horizontal|center_vertical|start"
+                android:text="Distance Travelled : 1.00 Km"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/colorText"
+                android:textSize="6pt"
+                android:textStyle="bold" />
+
+
+            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                android:id="@+id/txt_start_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="8"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:gravity="center_horizontal|center_vertical|start"
+                android:text="Start Loaction : Building No. 30, Electronic Co-operative Estate Ltd.,, Pune-Satara Road, Pune, Maharashtra 411009"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/colorText"
+                android:textSize="6pt"
+                android:textStyle="bold" />
+
+
+            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                android:id="@+id/txt_end_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:gravity="center_horizontal|center_vertical|start"
+                android:text="End Loaction : Building No. 30, Electronic Co-operative Estate Ltd.,, Pune-Satara Road, Pune, Maharashtra 411009"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/colorText"
+                android:textSize="6pt"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

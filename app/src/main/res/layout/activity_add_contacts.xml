@@ -1,0 +1,589 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".sos.activity.ActivityAddContacts">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="25pt"
+            android:background="@drawable/back_gradint">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="5.5"
+                android:background="@drawable/ripple_color"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="goBack">
+
+                <ImageView
+                    android:id="@+id/menuLeft"
+                    android:layout_width="11pt"
+                    android:layout_height="11pt"
+                    app:srcCompat="@drawable/ic_back" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SoS Contacts"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorWhite" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="4"
+                    android:gravity="center">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/toolbar"
+            android:background="@color/colorHr">
+
+            <RelativeLayout
+                android:id="@+id/hideLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="40pt"
+                android:background="@drawable/back_gradint">
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8pt"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/sosFirstCardView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="2.5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="2.5dp"
+                        card_view:cardCornerRadius="2dp"
+                        card_view:contentPadding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5pt"
+                            android:layout_marginRight="5pt"
+                            android:layout_marginTop="5pt"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+
+                                android:gravity="center_vertical"
+                                android:weightSum="2">
+
+
+                                <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_weight="2"
+                                    android:text="1st Contact"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/first_name_TextInputLayout"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:theme="@style/TextLabel">
+
+                                <vts.snystems.sns.vts.fonts.MyEditextNormal
+                                    android:id="@+id/first_name_EditText"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+
+                                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                                    android:drawablePadding="4dp"
+                                    android:hint="Name*"
+                                    android:inputType="textNoSuggestions|textCapWords|text"
+                                    android:maxLength="25" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/first_number_TextInputLayout"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:theme="@style/TextLabel">
+
+                                <vts.snystems.sns.vts.fonts.MyEditextNormal
+                                    android:id="@+id/first_number_EditText"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:digits="+0123456789"
+                                    android:drawableLeft="@drawable/ic_phone_and_black_24dp"
+                                    android:drawablePadding="4dp"
+                                    android:hint="Mobile*"
+                                    android:inputType="phone"
+                                    android:maxLength="13" />
+                            </android.support.design.widget.TextInputLayout>
+
+
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="25pt">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="10pt"
+                                    android:layout_centerVertical="true"
+                                    android:background="@color/rippleColor">
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:clickable="true"
+                                        android:onClick="saveFirstContact"
+                                        android:background="@drawable/ripple_effect">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/ic_done_orange_24dp"/>
+
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:clickable="true"
+                                        android:onClick="addFirstContactPreference"
+                                        android:background="@drawable/ripple_effect">
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/ic_perm_contact_calendar_black_24dp"/>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:clickable="true"
+                                        android:onClick="deleteFirstContact"
+                                        android:background="@drawable/ripple_effect">
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/ic_delete_black_24dp"/>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="5pt" />
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/sosSecondCardView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="2.5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        card_view:cardCornerRadius="2dp"
+                        card_view:contentPadding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5pt"
+                            android:layout_marginRight="5pt"
+                            android:layout_marginTop="5pt"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:weightSum="2">
+
+
+                                <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="2"
+                                    android:text="2nd Contact"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/second_name_TextInputLayout"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:theme="@style/TextLabel">
+
+
+                                <vts.snystems.sns.vts.fonts.MyEditextNormal
+                                    android:id="@+id/second_name_EditText"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+
+                                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                                    android:drawablePadding="4dp"
+                                    android:hint="Name*"
+                                    android:inputType="textNoSuggestions|textCapWords"
+                                    android:maxLength="25" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/second_number_TextInputLayout"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:theme="@style/TextLabel">
+
+                                <vts.snystems.sns.vts.fonts.MyEditextNormal
+                                    android:id="@+id/second_number_EditText"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:digits="+0123456789"
+                                    android:drawableLeft="@drawable/ic_phone_and_black_24dp"
+                                    android:drawablePadding="4dp"
+                                    android:hint="Mobile*"
+                                    android:inputType="phone"
+                                    android:maxLength="13" />
+                            </android.support.design.widget.TextInputLayout>
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="25pt">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="10pt"
+                                    android:layout_centerVertical="true"
+                                    android:background="@color/rippleColor">
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:clickable="true"
+                                        android:onClick="saveSecondContact"
+                                        android:background="@drawable/ripple_effect">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/ic_done_orange_24dp"/>
+
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:clickable="true"
+                                        android:onClick="addSecondContactPreference"
+                                        android:background="@drawable/ripple_effect">
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/ic_perm_contact_calendar_black_24dp"/>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:clickable="true"
+                                        android:onClick="deleteSecondContact"
+                                        android:background="@drawable/ripple_effect">
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/ic_delete_black_24dp"/>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="5pt" />
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/sosThirdCardView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="2.5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        card_view:cardCornerRadius="2dp"
+                        card_view:contentPadding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5pt"
+                            android:layout_marginRight="5pt"
+                            android:layout_marginTop="5pt"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:weightSum="2">
+
+                                <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="2"
+                                    android:text="3rd Contact"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/third_name_TextInputLayout"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:theme="@style/TextLabel">
+
+                                <vts.snystems.sns.vts.fonts.MyEditextNormal
+                                    android:id="@+id/third_name_EditText"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+
+                                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                                    android:drawablePadding="4dp"
+                                    android:hint="Name*"
+                                    android:inputType="textNoSuggestions|textCapWords"
+                                    android:maxLength="25" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/third_number_TextInputLayout"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:theme="@style/TextLabel">
+
+                                <vts.snystems.sns.vts.fonts.MyEditextNormal
+                                    android:id="@+id/third_number_EditText"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+
+                                    android:digits="+0123456789"
+                                    android:drawableLeft="@drawable/ic_phone_and_black_24dp"
+                                    android:drawablePadding="4dp"
+                                    android:hint="Mobile*"
+                                    android:inputType="phone"
+                                    android:maxLength="13" />
+                            </android.support.design.widget.TextInputLayout>
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="25pt">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="10pt"
+                                    android:layout_centerVertical="true"
+                                    android:background="@color/rippleColor">
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:clickable="true"
+                                        android:onClick="saveThirdContact"
+                                        android:background="@drawable/ripple_effect">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/ic_done_orange_24dp"/>
+
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:clickable="true"
+                                        android:onClick="addThirdContactPreference"
+                                        android:background="@drawable/ripple_effect">
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/ic_perm_contact_calendar_black_24dp"/>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:clickable="true"
+                                        android:onClick="deleteThirdContact"
+                                        android:background="@drawable/ripple_effect">
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/ic_delete_black_24dp"/>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="5pt" />
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="15pt" />
+                </LinearLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- <android.support.design.widget.FloatingActionButton
+         android:id="@+id/floatingAddGeofence"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="bottom|end"
+         android:layout_margin="@dimen/fab_margin"
+         android:onClick="addContacts"
+         android:clickable="true"
+         app:srcCompat="@drawable/ic_person_add_black_24dp" />-->
+</android.support.design.widget.CoordinatorLayout>

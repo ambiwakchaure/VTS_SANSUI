@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/searchBarRl"
+            android:layout_width="match_parent"
+            android:layout_height="20pt"
+            android:visibility="gone"
+            android:background="@drawable/back_gradint">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="15pt"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/background_serch_alert"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <vts.snystems.sns.vts.fonts.MyEditextNormal
+                    android:id="@+id/serachDataEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="7"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_search_black_18dp"
+                    android:drawablePadding="5dp"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789"
+                    android:gravity="center_horizontal|center_vertical|start"
+                    android:hint="@string/search"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="#80FFFFFF"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/vehicleListRecycle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></android.support.v7.widget.RecyclerView>
+
+        <include layout="@layout/status_not_found"></include>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="bottom|right">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/sosFloating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@android:color/transparent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/fab_margin"
+            android:elevation="16dp"
+            android:text="SoS"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

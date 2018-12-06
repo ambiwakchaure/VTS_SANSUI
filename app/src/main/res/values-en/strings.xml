@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="running">Running</string>
+    <string name="idle">Idle</string>
+    <string name="parking">Parking</string>
+    <string name="offline">Offline</string>
+    <string name="alerts">Alerts</string>
+    <string name="language">Language</string>
+    <string name="tVehicles">Total Vehicle</string>
+    <string name="about">About</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="aHist">Alert History</string>
+    <string name="faq">FAQ</string>
+    <string name="logout">Logout</string>
+    <string name="logout_msg">Do you want to logout?</string>
+    <string name="vList">Vehicle List</string>
+    <string name="search">Search</string>
+    <string name="stop">Stop</string>
+    <string name="tStop">Total Stop</string>
+    <string name="avgSpeed">Avg Speed</string>
+    <string name="maxSpeed">Max Speed</string>
+    <string name="cancel">Cancel</string>
+    <string name="speed">Speed</string>
+    <string name="odometer">Odometer</string>
+    <string name="fuel">Fuel</string>
+    <string name="ign">IGN</string>
+    <string name="power">Power</string>
+    <string name="gps">GPS</string>
+    <string name="distance">Last Distance</string>
+    <string name="duration">Last Duration</string>
+
+    <string name="imei">IMEI : </string>
+    <string name="VNumber">Vehicle Number : </string>
+    <string name="vStatus">Vehicle Status : </string>
+    <string name="lastLoc">Last Location : </string>
+    <string name="lastUTime">Last Updated Time : </string>
+    <string name="ignStatus">IGN Status : </string>
+    <string name="powerStatus">Power Status : </string>
+    <string name="gpsStatus">GPS Status : </string>
+
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="setting">Setting</string>
+    <string name="year">Year</string>
+    <string name="sAlerts">Select Alerts</string>
+    <string name="ok">Ok</string>
+    <string name="low_battery">Low Battery</string>
+    <string name="overspeed">Overspeed</string>
+    <string name="sos">SOS</string>
+    <string name="powercut">Powercut</string>
+    <string name="ignition">Ignition</string>
+    <string name="english">English</string>
+    <string name="hindi">Hindi</string>
+    <string name="marathi">Marathi</string>
+    <string name="all">All</string>
+    <string name="vehicle_summary">Travel Summary</string>
+    <string name="v_summary">Travel Summary</string>
+    <string name="vehicle_number">Vehicle Number</string>
+    <string name="address">Address</string>
+    <string name="last_update_dt">Last Update Dt</string>
+    <string name="tracking_v">Tracking</string>
+    <string name="s_st">Vehicle Status</string>
+    <string name="distance_summary">Distance Summary</string>
+
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="week">Week</string>
+    <string name="day_before">Day Before</string>
+    <string name="month">Month</string>
+
+    <string name="map_view">Map View</string>
+
+    <string name="faq1">This caused by either of two potential issues:
+\n1.	The device is not transmitting
+\n\t\ta.	Poor wireless data coverage
+\n\t\tb.	Poor antenna location resulting in deteriorated wireless data signal.
+\n\t\tc.	Antenna not plugged into the device.
+\n2.	The GPS unit cannot see the sky.
+\n\t\ta.	Antenna facing downward.
+\n\t\tb.	Poor antenna placement.
+\n\t\tc.	Antenna is placed too far below the dash to have a good view of the sky.
+\n\t\td.	On a new install, it may take several minutes for the GPS to establish location.
+</string>
+    <string name="faq2">The GPS unit does not have a good view of the sky.
+\na.	When the vehicles are parked facing tall buildings (or in indoor garages or under metal awnings) large portions of the sky are often obscured.
+\nb.	Antenna placement is critical to ensure reliable and accurate operation.
+</string>
+    <string name="faq3">In almost every case, this is because it’s a newly installed device and the unit hasn’t yet transmitted its first packet of data (and thus cannot appear on the map because we don’t yet know its location). It generally takes approx. 5 minutes after a new device has been powered up to begin transmitting.</string>
+
+
+
+
+
+    <string-array name="list">
+        <item>All</item>
+        <item>Running</item>
+        <item>Idle</item>
+        <item>Offline</item>
+        <item>Parking</item>
+    </string-array>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="last_parking">Last Parking</string>
+    <string name="over_speed">Over Speed</string>
+    <string name="vehicle_status">Vehicle Status</string>
+    <string name="dashboard_preference">Dashboard Preference</string>
+    <string name="live_tracking">Live Tracking</string>
+    <string name="last_distance">Last Distance</string>
+    <string name="last_duration">Last Duration</string>
+
+    <string name="normal">Normal</string>
+    <string name="satellite">Satellite</string>
+    <string name="hybrid">Hybrid</string>
+    <string name="run_not_found">Sorry ! Running vehicle not found</string>
+    <string name="idle_vehicle">Sorry ! Idle vehicle not found</string>
+    <string name="parking_vehicle">Sorry ! Parking vehicle not found</string>
+    <string name="off_vehicle">Sorry ! Offline vehicle not found</string>
+    <string name="vehicle_name">Vehicle Name*</string>
+    <string name="over_speed_limit">Over Speed Limit*</string>
+    <string name="update">Update</string>
+    <string name="val_vnumber">Warning ! enter vehicle name</string>
+    <string name="val_vname">Warning ! enter vehicle number</string>
+    <string name="val_spped_lim">Warning ! enter over speed limit</string>
+    <string name="val_inval_ov">Warning ! invalid over speed limit</string>
+    <string name="inval_num">Warning ! Invalid vehicle number</string>
+    <string name="inval_length">Warning ! Invalid vehicle number length.</string>
+    <string name="success_vn">Success ! Vehicle details updated</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="today_playback">Todays playback not found</string>
+    <string name="yes_play">Yesterday playback not found</string>
+    <string name="play_day">Day before playback not found</string>
+    <string name="tal_hist">Today alert history not found</string>
+    <string name="yal_history">Yesterday alert history not found</string>
+    <string name="wal_hist">Weekly alert history not found</string>
+    <string name="t_dsum">Today distance summary not found</string>
+    <string name="y_dsum">Yesterday distance summary not found</string>
+    <string name="m_dsum">Monthly distance summary not found</string>
+    <string name="t_trsum">Today travel summary not found</string>
+    <string name="ys_trsum">Yesterday travel summary not found</string>
+    <string name="week_trsum">Weekly travel summary not found</string>
+    <string name="change_photo">Change Photo</string>
+
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="mobile">Mobile</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="profile">Profile</string>
+    <string name="overviewd">Benosys Pvt. Ltd. is a company engaged in design and development of innovative products and applications in the electronics industry. We are the global provider of collaborative IOT business solutions. With a legacy of 25 years in the industry, Benosys has come up with collaborative IOT business solutions, Real Time Tracking, Smart Modules and highly advanced electronic components. We deliver efficient, cost-effective solutions to our clients who look to adopt IOT practices to give their product and service offerings a quantum leap.</string>
+    <string name="add_sost">Add Sos Contact</string>
+    <string name="sos_add">SoS contact not found, click Ok to add SoS contact</string>
+
+    <string name="geofence">Geofence</string>
+    <string name="view">View</string>
+    <string name="delete">Delete</string>
+    <string name="in_alert">In Alert</string>
+    <string name="out_alert">Out Alert</string>
+    <string name="radius">Radius</string>
+    <string name="d_geofence">Geofence details not found</string>
+    <string name="select_location">Select Location</string>
+    <string name="geo_perm">Do you want to create geofence on this location</string>
+    <string name="c_loc">Change Location</string>
+    <string name="set_geofence">Set Geofence</string>
+    <string name="geofence_name">Geofence name</string>
+    <string name="home">Home</string>
+    <string name="school">School</string>
+    <string name="work">Work</string>
+    <string name="s_go">You can not add more than 3 geofence</string>
+    <string name="edite_geofence">Edit Geofence</string>
+    <string name="edit_radius">Edit Radius</string>
+    <string name="llgout">Do you want to logout</string>
+    <string name="c_app">Do you want to close app?</string>
+    <string name="ex">Exit</string>
+    <string name="cancel_l">Cancel</string>
+    <string name="oops_alert_not_found">Oops ! alert not found</string>
+    <string name="oops_live_status_not_found">Oops ! live status not found</string>
+    <string name="req_t">Request timed out!</string>
+    <string name="refresh">Refresh</string>
+    <string name="tout">Timeout Error</string>
+    <string name="n_conn">No connection</string>
+    <string name="check_wi">Please check internet connection or wifi connection.</string>
+    <string name="in_image">Incorrect image format found</string>
+
+    <string name="time_duration">Start Date</string>
+    <string name="end_duration">End Date</string>
+    <string name="distance_travelled">Distance Travelled</string>
+    <string name="start_location">Start Loaction</string>
+    <string name="end_loaction">End Loaction</string>
+    <string name="trtime">Last track Date Time</string>
+
+</resources>

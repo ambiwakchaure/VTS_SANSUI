@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/dashLi"
+            android:layout_width="fill_parent"
+            android:layout_height="35pt"
+            android:background="@drawable/ripple_effect"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5pt"
+                android:layout_weight="1"
+                android:text="@string/dashboard_preference"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="20pt"
+                android:layout_marginRight="5pt"
+                android:layout_weight="6"
+                app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+            <!--<Switch
+                android:id="@+id/switchAlerts"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5pt"
+                android:layout_weight="2.5"
+                android:checked="false" />-->
+
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:background="@color/rippleColor"
+            android:layout_marginRight="4pt"
+            android:layout_marginLeft="4pt"
+            android:layout_height="0.1pt"/>
+
+        <LinearLayout
+            android:id="@+id/dashLei"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4pt"
+            android:visibility="gone"
+            android:background="@color/colorGery10"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/dashRadioGrp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView">
+
+                <vts.snystems.sns.vts.fonts.MyRadioButton
+                    android:id="@+id/mapRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Map View" />
+
+                <vts.snystems.sns.vts.fonts.MyRadioButton
+                    android:id="@+id/listRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4pt"
+                    android:text="List View" />
+
+                <vts.snystems.sns.vts.fonts.MyRadioButton
+                    android:id="@+id/vStatusRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4pt"
+                    android:text="@string/vehicle_status" />
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2pt" />
+
+            </RadioGroup>
+            <View
+                android:layout_width="fill_parent"
+                android:background="@color/rippleColor"
+                android:layout_height="0.1pt"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/alertsLi"
+            android:layout_width="fill_parent"
+            android:layout_height="35pt"
+            android:background="@drawable/ripple_effect"
+            android:clickable="true"
+
+
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5pt"
+                android:layout_weight="1"
+                android:text="@string/alerts"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="20pt"
+                android:layout_marginRight="5pt"
+                android:layout_weight="6"
+                app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+            <!--<Switch
+                android:id="@+id/switchAlerts"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5pt"
+                android:layout_weight="2.5"
+                android:checked="false" />-->
+
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:background="@color/rippleColor"
+            android:layout_marginRight="4pt"
+            android:layout_marginLeft="4pt"
+            android:layout_height="0.1pt"/>
+
+
+        <LinearLayout
+            android:id="@+id/alertsHideLi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4pt"
+            android:background="@color/colorGery10"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <!-- <CheckBox
+                 android:id="@+id/allChk"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+
+                 android:text="@string/all" />-->
+
+            <vts.snystems.sns.vts.fonts.MyCheckbox
+                android:id="@+id/lowBatChk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5pt"
+                android:text="@string/low_battery"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <vts.snystems.sns.vts.fonts.MyCheckbox
+                android:id="@+id/overSpeedtChk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5pt"
+                android:text="@string/overspeed"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <vts.snystems.sns.vts.fonts.MyCheckbox
+                android:id="@+id/sosChk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5pt"
+                android:text="@string/sos"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <vts.snystems.sns.vts.fonts.MyCheckbox
+                android:id="@+id/pCutChk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5pt"
+                android:text="@string/powercut"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <vts.snystems.sns.vts.fonts.MyCheckbox
+                android:id="@+id/ignChk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5pt"
+
+                android:text="@string/ignition"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+            <View
+                android:layout_width="fill_parent"
+                android:background="@color/rippleColor"
+                android:layout_marginTop="4pt"
+                android:layout_height="0.1pt"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/selectLngLi"
+            android:layout_width="fill_parent"
+            android:layout_height="35pt"
+            android:background="@drawable/ripple_effect"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                android:id="@+id/languageTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5pt"
+                android:layout_weight="1"
+                android:text="@string/language"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="20pt"
+                android:layout_marginRight="5pt"
+                android:layout_weight="6"
+                app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:background="@color/rippleColor"
+            android:layout_marginRight="4pt"
+            android:layout_marginLeft="4pt"
+
+            android:layout_height="0.1pt"/>
+
+
+        <LinearLayout
+            android:id="@+id/lngHideLi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4pt"
+            android:orientation="vertical"
+            android:background="@color/colorGery10"
+            android:visibility="gone">
+
+            <RadioGroup
+                android:id="@+id/lngRadioGrp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView">
+
+                <vts.snystems.sns.vts.fonts.MyRadioButton
+                    android:id="@+id/enRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5pt"
+                    android:text="@string/english"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                <vts.snystems.sns.vts.fonts.MyRadioButton
+                    android:id="@+id/hiRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5pt"
+                    android:text="@string/hindi"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                <vts.snystems.sns.vts.fonts.MyRadioButton
+                    android:id="@+id/mrRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5pt"
+                    android:text="@string/marathi"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+            </RadioGroup>
+            <View
+                android:layout_width="fill_parent"
+                android:background="@color/rippleColor"
+                android:layout_marginTop="4pt"
+                android:layout_height="0.1pt"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/sosSetting"
+            android:layout_width="fill_parent"
+            android:layout_height="35pt"
+            android:background="@drawable/ripple_effect"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5pt"
+                android:layout_weight="1"
+                android:text="@string/sos"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="20pt"
+                android:layout_marginRight="5pt"
+                android:layout_weight="6"
+                app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:background="@color/rippleColor"
+            android:layout_marginRight="4pt"
+            android:layout_marginLeft="4pt"
+            android:layout_height="0.1pt"/>
+
+        <LinearLayout
+            android:id="@+id/createGeofence"
+            android:layout_width="fill_parent"
+            android:layout_height="35pt"
+            android:background="@drawable/ripple_effect"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5pt"
+                android:layout_weight="1"
+                android:text="@string/geofence"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="20pt"
+                android:layout_marginRight="5pt"
+                android:layout_weight="6"
+                app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:background="@color/rippleColor"
+            android:layout_marginRight="4pt"
+            android:layout_marginLeft="4pt"
+            android:layout_height="0.1pt"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/sosFloating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@android:color/transparent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/fab_margin"
+            android:elevation="16dp"
+            android:text="SoS"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>
