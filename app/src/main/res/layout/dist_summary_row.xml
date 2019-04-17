@@ -50,7 +50,7 @@
                     android:layout_weight="1">
 
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                    <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                         android:id="@+id/vNumberTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
                         android:text="@string/vehicle_number"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:id="@+id/vTargetNameTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
                     android:gravity="center"
                     android:layout_weight="2.5">
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:id="@+id/vDistance"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

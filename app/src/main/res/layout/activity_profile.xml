@@ -11,7 +11,7 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="25pt"
-        android:background="@drawable/back_gradint">
+        android:background="@color/colorPrimaryDark">
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -43,7 +43,7 @@
                 android:layout_weight="1"
                 android:gravity="center">
 
-                <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Profile"
@@ -107,12 +107,12 @@
                         android:minWidth="40dp"
                         android:src="@drawable/ic_profile_demo" />
 
-                    <vts.snystems.sns.vts.fonts.MyButtonNormal
+                    <vts.snystems.sns.sansui.fonts.MyButtonNormal
                         android:layout_width="100pt"
                         android:layout_height="16pt"
 
                         android:onClick="captureImage"
-                        android:background="@drawable/back_gradint"
+                        android:background="@color/colorPrimaryDark"
                         android:layout_gravity="center_horizontal"
                         android:gravity="center_vertical|center_horizontal"
                         android:text="Change Photo"
@@ -131,7 +131,7 @@
                         android:layout_marginTop="4pt"
                         android:layout_marginRight="15dp">
 
-                        <vts.snystems.sns.vts.fonts.MyEditextNormal
+                        <vts.snystems.sns.sansui.fonts.MyEditextNormal
                             android:id="@+id/txt_first_name"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -151,7 +151,7 @@
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="15dp">
 
-                        <vts.snystems.sns.vts.fonts.MyEditextNormal
+                        <vts.snystems.sns.sansui.fonts.MyEditextNormal
                             android:id="@+id/txt_last_name"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -171,7 +171,7 @@
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="15dp">
 
-                        <vts.snystems.sns.vts.fonts.MyEditextNormal
+                        <vts.snystems.sns.sansui.fonts.MyEditextNormal
                             android:id="@+id/txt_email"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -193,7 +193,7 @@
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="15dp">
 
-                        <vts.snystems.sns.vts.fonts.MyEditextNormal
+                        <vts.snystems.sns.sansui.fonts.MyEditextNormal
                             android:id="@+id/txt_mobile"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -215,7 +215,7 @@
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="15dp">
 
-                        <vts.snystems.sns.vts.fonts.MyEditextNormal
+                        <vts.snystems.sns.sansui.fonts.MyEditextNormal
                             android:id="@+id/txt_address"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -227,14 +227,14 @@
 
                     </android.support.design.widget.TextInputLayout>
 
-                    <vts.snystems.sns.vts.fonts.MyButtonNormal
+                    <vts.snystems.sns.sansui.fonts.MyButtonNormal
                         android:id="@+id/btn_save"
                         android:layout_width="match_parent"
                         android:layout_height="16pt"
                         android:layout_marginBottom="3dp"
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="15dp"
-                        android:background="@drawable/back_gradint"
+                        android:background="@color/colorPrimaryDark"
                         android:gravity="center_vertical|center_horizontal"
                         android:text="Save Changes"
                         android:textAllCaps="false"

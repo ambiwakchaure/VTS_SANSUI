@@ -19,7 +19,7 @@
             android:layout_marginTop="18pt"
             android:orientation="vertical">
 
-            <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+            <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                 android:id="@+id/txt_total_vehicles"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -71,7 +71,7 @@
                                 android:layout_weight="2"
                                 app:srcCompat="@drawable/ic_running" />
 
-                            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                            <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                                 android:id="@+id/txt_running"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
@@ -84,7 +84,7 @@
                                 android:textColor="@color/colorText"
                                 android:textSize="10pt" />
 
-                            <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                            <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                                 android:id="@+id/txt_running_count"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
@@ -131,7 +131,7 @@
                                 android:layout_weight="2"
                                 app:srcCompat="@drawable/ic_idle" />
 
-                            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                            <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                                 android:id="@+id/txt_idle"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
@@ -143,7 +143,7 @@
                                 android:textColor="@color/colorText"
                                 android:textSize="10pt" />
 
-                            <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                            <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                                 android:id="@+id/txt_idle_count"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
@@ -190,7 +190,7 @@
                                 android:layout_weight="2"
                                 app:srcCompat="@drawable/ic_inactive" />
 
-                            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                            <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                                 android:id="@+id/txt_inactive"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
@@ -202,7 +202,7 @@
                                 android:textColor="@color/colorText"
                                 android:textSize="10pt" />
 
-                            <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                            <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                                 android:id="@+id/txt_inactive_count"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
@@ -249,7 +249,7 @@
                                 android:layout_weight="2"
                                 app:srcCompat="@drawable/ic_stop" />
 
-                            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                            <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                                 android:id="@+id/txt_stop"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
@@ -261,7 +261,7 @@
                                 android:textColor="@color/colorText"
                                 android:textSize="10pt" />
 
-                            <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                            <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                                 android:id="@+id/txt_stop_count"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
@@ -351,7 +351,7 @@
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
+            android:visibility="gone"
             android:layout_gravity="bottom|right">
 
             <android.support.design.widget.FloatingActionButton

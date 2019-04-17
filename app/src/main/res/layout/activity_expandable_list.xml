@@ -22,7 +22,7 @@
 
             android:layout_weight="1">
 
-            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+            <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                 android:id="@+id/lblListHeader"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"

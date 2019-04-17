@@ -11,7 +11,7 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="25pt"
-        android:background="@drawable/back_gradint">
+        android:background="@color/colorPrimaryDark">
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -43,7 +43,7 @@
                 android:layout_weight="1"
                 android:gravity="center">
 
-                <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/edite_geofence"
@@ -79,7 +79,7 @@
                 android:layout_height="match_parent"
                 tools:context="com.sample.sishin.maplocation.MapsActivity" />
 
-            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+            <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                 android:id="@+id/geofenceAddressTextView"
                 android:layout_width="fill_parent"
                 android:layout_height="25pt"
@@ -102,7 +102,7 @@
             android:background="#59000000"
             android:orientation="vertical">
 
-            <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+            <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5pt"
@@ -128,7 +128,7 @@
                 app:dsb_thumbSize="10pt"
                 app:dsb_trackColor="@color/editextBottomLine" />
 
-            <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+            <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                 android:id="@+id/edit_geo_radius"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

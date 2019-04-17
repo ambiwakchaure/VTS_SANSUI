@@ -12,7 +12,7 @@
         android:layout_height="45pt"
         app:srcCompat="@drawable/ic_no_data_waring"/>
 
-    <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+    <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
         android:id="@+id/txt_error_no_data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,7 +20,7 @@
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
         android:textColor="@color/rippleColor" />
 
-    <vts.snystems.sns.vts.fonts.MyButtonNormal
+    <vts.snystems.sns.sansui.fonts.MyButtonNormal
         android:id="@+id/buttonRefresh"
         android:layout_width="wrap_content"
         android:layout_height="15pt"

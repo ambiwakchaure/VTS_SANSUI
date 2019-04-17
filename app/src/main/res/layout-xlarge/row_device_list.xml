@@ -51,7 +51,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
-                        <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                        <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                             android:id="@+id/txt_vehicles_no"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -61,7 +61,7 @@
                             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                             android:textColor="@color/colorText"
                             android:textStyle="bold" />
-                        <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                             android:id="@+id/vTargetName"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -77,7 +77,7 @@
                         android:orientation="horizontal"
                         android:weightSum="10">
 
-                        <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                             android:id="@+id/txt_running"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -86,7 +86,7 @@
                             android:textSize="8pt"
                             android:textColor="@color/colorText" />
 
-                        <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                             android:id="@+id/txt_idle"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -95,7 +95,7 @@
                             android:textSize="8pt"
                             android:textColor="@color/colorText" />
 
-                        <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                             android:id="@+id/txt_stop"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -113,7 +113,7 @@
                         android:layout_marginTop="4pt"
                         android:weightSum="10">
 
-                        <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                        <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
 
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -123,7 +123,7 @@
                             android:textSize="8pt"
                             android:textStyle="bold" />
 
-                        <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                        <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
 
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -133,7 +133,7 @@
                             android:textSize="8pt"
                             android:textStyle="bold" />
 
-                        <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                        <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
 
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -151,7 +151,7 @@
                         android:orientation="horizontal"
                         android:weightSum="10">
 
-                        <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                             android:id="@+id/txt_tot_stop"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -160,7 +160,7 @@
                             android:textSize="8pt"
                             android:textColor="@color/colorText" />
 
-                        <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                             android:id="@+id/txt_avg_speed"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -169,7 +169,7 @@
                             android:textSize="8pt"
                             android:textColor="@color/colorText" />
 
-                        <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                             android:id="@+id/txt_max_speed"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -186,7 +186,7 @@
                         android:layout_marginTop="4pt"
                         android:weightSum="10">
 
-                        <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                        <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
 
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -196,7 +196,7 @@
                             android:textSize="8pt"
                             android:textStyle="bold" />
 
-                        <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                        <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
 
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -206,7 +206,7 @@
                             android:textSize="8pt"
                             android:textStyle="bold" />
 
-                        <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                        <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
 
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"

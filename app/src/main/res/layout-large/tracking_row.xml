@@ -54,14 +54,14 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                        <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                             android:id="@+id/vNumberTxt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/vehicle_number"
                             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
-                        <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                             android:id="@+id/vTargetName"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -69,7 +69,7 @@
                             android:text="Target Name" />
                     </LinearLayout>
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:id="@+id/vCurrAdress"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
@@ -77,7 +77,7 @@
                         android:maxLines="2"
                         android:text="@string/address" />
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:id="@+id/vLastDt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -109,7 +109,7 @@
                     android:clickable="true"
                     android:gravity="center">
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:drawableLeft="@drawable/ic_live_track"
@@ -130,7 +130,7 @@
                     android:background="@color/colorPrimaryDark"
                     android:gravity="center">
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:id="@+id/vStatus"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

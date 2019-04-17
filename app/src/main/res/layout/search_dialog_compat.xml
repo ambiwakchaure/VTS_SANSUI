@@ -19,7 +19,7 @@
         android:background="@drawable/drw_rectangle_popup_bg"
         android:orientation="vertical">
 
-        <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+        <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
             android:id="@+id/txt_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
             android:paddingBottom="8dp"
             android:paddingTop="8dp">
 
-            <vts.snystems.sns.vts.fonts.MyEditextNormal
+            <vts.snystems.sns.sansui.fonts.MyEditextNormal
                 android:id="@+id/txt_search"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

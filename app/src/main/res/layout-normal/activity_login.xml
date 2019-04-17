@@ -8,7 +8,7 @@
     android:background="@drawable/ic_background"
     android:orientation="vertical"
 
-    tools:context="vts.snystems.sns.vts.activity.ActivityLogin">
+    tools:context="vts.snystems.sns.sansui.activity.ActivityLogin">
 
     <ImageView
         android:layout_width="140pt"
@@ -16,21 +16,21 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="20dp"
         android:layout_marginTop="30dp"
-        app:srcCompat="@drawable/ic_logo_benosys" />
+        app:srcCompat="@drawable/benosys_logo_white" />
 
-    <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+    <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:gravity="center_horizontal|center_vertical"
         android:text="@string/welcome"
         android:textColor="@color/colorWhite"
         android:textSize="30sp"
         android:textStyle="bold" />
 
-    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
@@ -67,7 +67,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <vts.snystems.sns.vts.fonts.MyEditextNormal
+                    <vts.snystems.sns.sansui.fonts.MyEditextNormal
                         android:id="@+id/usernameEditText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -81,7 +81,7 @@
 
                         android:textSize="18sp" />
 
-                    <vts.snystems.sns.vts.fonts.MyEditestPass
+                    <vts.snystems.sns.sansui.fonts.MyEditestPass
                         android:id="@+id/passwordEditText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -96,7 +96,7 @@
                         app:drawable_hide="@drawable/ic_visibility_black_36dp"
                         app:drawable_show="@drawable/ic_visibility_off_black_36dp" />
 
-                    <vts.snystems.sns.vts.fonts.MyCheckbox
+                    <vts.snystems.sns.sansui.fonts.MyCheckbox
                         android:id="@+id/rememberPasswordCheckBox"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
@@ -109,7 +109,7 @@
                         android:textColor="@color/colorBlack" />
 
 
-                    <vts.snystems.sns.vts.fonts.MyButtonNormal
+                    <vts.snystems.sns.sansui.fonts.MyButtonNormal
 
                         android:id="@+id/loginButton"
                         android:layout_width="match_parent"
@@ -118,7 +118,7 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="20dp"
                         android:layout_marginTop="10dp"
-                        android:background="@drawable/back_gradint"
+                        android:background="@color/colorPrimaryDark"
                         android:baselineAligned="false"
 
                         android:text="@string/login"

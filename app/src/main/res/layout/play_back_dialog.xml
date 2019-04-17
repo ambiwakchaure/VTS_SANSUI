@@ -10,21 +10,21 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
 
-        <vts.snystems.sns.vts.fonts.MyRadioButton
+        <vts.snystems.sns.sansui.fonts.MyRadioButton
             android:id="@+id/radioButtonToday"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checked="true"
             android:text="Today" />
 
-        <vts.snystems.sns.vts.fonts.MyRadioButton
+        <vts.snystems.sns.sansui.fonts.MyRadioButton
             android:id="@+id/radioButtonYesterday"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:text="Yesterday" />
 
-        <vts.snystems.sns.vts.fonts.MyRadioButton
+        <vts.snystems.sns.sansui.fonts.MyRadioButton
             android:id="@+id/radioButtonUserTime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

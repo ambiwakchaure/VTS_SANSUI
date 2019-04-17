@@ -44,7 +44,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-                    <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                    <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                         android:id="@+id/txt_vehicles_no"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -54,7 +54,7 @@
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                         android:textColor="@color/colorText"
                         android:textStyle="bold" />
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:id="@+id/vTargetName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
 
                      >
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:id="@+id/txtImei"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -89,7 +89,7 @@
                         android:text="30 Jun,2018"
                         android:textColor="@color/colorText" />-->
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:id="@+id/txtSos"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -106,7 +106,7 @@
                     android:weightSum="9"
                     >
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                    <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
 
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -126,7 +126,7 @@
 
                         android:textStyle="bold" />-->
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                    <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
 
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -144,7 +144,7 @@
                     android:orientation="horizontal"
                     android:weightSum="9">
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:id="@+id/txtOverSpeed"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -152,7 +152,7 @@
                         android:text="5"
                         android:textColor="@color/colorText" />
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:id="@+id/txtPowerCut"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -160,7 +160,7 @@
                         android:text="7"
                         android:textColor="@color/colorText" />
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:id="@+id/txtLowBattery"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -176,7 +176,7 @@
 
                     android:weightSum="9">
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                    <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
 
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -186,7 +186,7 @@
 
                         android:textStyle="bold" />
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                    <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
 
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -196,7 +196,7 @@
 
                         android:textStyle="bold" />
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                    <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
 
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"

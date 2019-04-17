@@ -5,7 +5,7 @@
     android:background="@color/colorWhite"
     android:orientation="vertical" >
 
-    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
         android:id="@+id/lblListItem"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

@@ -12,7 +12,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+            <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -22,7 +22,7 @@
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <vts.snystems.sns.vts.fonts.MyEditextNormal
+            <vts.snystems.sns.sansui.fonts.MyEditextNormal
                 android:id="@+id/et_geofence_name"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -41,7 +41,7 @@
                 android:layout_weight="1"
                 android:padding="5pt">
 
-                <vts.snystems.sns.vts.fonts.MyCheckbox
+                <vts.snystems.sns.sansui.fonts.MyCheckbox
                     android:id="@+id/checkbox_home"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -49,7 +49,7 @@
                     android:layout_weight="1"
                     android:text="@string/home" />
 
-                <vts.snystems.sns.vts.fonts.MyCheckbox
+                <vts.snystems.sns.sansui.fonts.MyCheckbox
                     android:id="@+id/checkbox_school"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -57,7 +57,7 @@
                     android:layout_weight="1"
                     android:text="@string/school" />
 
-                <vts.snystems.sns.vts.fonts.MyCheckbox
+                <vts.snystems.sns.sansui.fonts.MyCheckbox
                     android:id="@+id/checkbox_work"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

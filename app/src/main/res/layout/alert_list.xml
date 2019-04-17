@@ -12,7 +12,7 @@
             android:id="@+id/searchRela"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@drawable/back_gradint"
+            android:background="@color/colorPrimaryDark"
             android:minHeight="?attr/actionBarSize"
             android:visibility="gone">
 
@@ -34,7 +34,7 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="1">
 
-                    <vts.snystems.sns.vts.fonts.MyEditextNormal
+                    <vts.snystems.sns.sansui.fonts.MyEditextNormal
                         android:id="@+id/serachDataEditText"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -107,6 +107,7 @@
     <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:layout_gravity="bottom|right">
 
         <android.support.design.widget.FloatingActionButton

@@ -198,7 +198,7 @@
             gauge:upperText=""
             gauge:valuePerNick="1" />
 
-        <vts.snystems.sns.vts.fonts.MyButtonDigital
+        <vts.snystems.sns.sansui.fonts.MyButtonDigital
             android:id="@+id/buttonDistance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

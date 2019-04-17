@@ -16,7 +16,7 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+            <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                 android:id="@+id/vTargetNameTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -25,7 +25,7 @@
                 android:text="Target Name"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
-            <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+            <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                 android:id="@+id/vNumberTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

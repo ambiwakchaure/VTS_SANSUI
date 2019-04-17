@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 28
     defaultConfig {
-        applicationId "vts.snystems.sns.vts"
+        applicationId "vts.snystems.sns.sansui"
         minSdkVersion 18
-        targetSdkVersion 26
+        targetSdkVersion 28
         multiDexEnabled true
-        versionCode 7
-        versionName "1.6"
+        versionCode 1
+        versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
 
@@ -31,22 +31,27 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:26.+'
-    implementation 'com.android.support:design:26.+'
+
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
     implementation 'com.google.android.gms:play-services-maps:9.8.0'
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
-    implementation 'com.android.support:support-v4:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    compile 'com.android.support:multidex:1.0.1'
-    //recyclerview
-//    implementation 'com.android.support:recyclerview-v7:26.1.+'
+    implementation 'com.android.support:multidex:1.0.1'
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
-    implementation 'com.android.support:cardview-v7:26.+'
+    implementation 'com.android.support:cardview-v7:28.0.0'
     //volley
-    implementation 'com.android.volley:volley:1.0.0'
+    implementation 'com.android.volley:volley:1.1.0'
     implementation 'com.github.d-max:spots-dialog:0.7@aar'
     //progress
     implementation 'com.kaopiz:kprogresshud:1.1.0'
@@ -60,11 +65,15 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:2.2.0'
     // compile 'com.google.android.gms:play-services:8.4.0'
     //password
-    compile 'com.github.scottyab:showhidepasswordedittext:0.5.1'
-    compile 'com.google.android.gms:play-services:10.2.0'
-    compile 'com.getbase:floatingactionbutton:1.10.1'
+    implementation 'com.github.scottyab:showhidepasswordedittext:0.5.1'
+    implementation 'com.google.android.gms:play-services:10.2.0'
+    implementation 'com.getbase:floatingactionbutton:1.10.1'
     //seekbar radiou
-    compile 'org.adw.library:discrete-seekbar:1.0.1'
+    implementation 'org.adw.library:discrete-seekbar:1.0.1'
     //marker cluster
     implementation 'com.google.maps.android:android-maps-utils:0.5'
+}
+
+repositories {
+    google()
 }

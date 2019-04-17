@@ -17,7 +17,7 @@
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/back_gradint">
+                android:background="@color/colorPrimaryDark">
 
                 <LinearLayout
                     android:layout_width="fill_parent"
@@ -50,7 +50,7 @@
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                        <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                             android:id="@+id/vNumber"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
                             android:textColor="@color/colorWhite"
                             android:textStyle="bold" />
 
-                        <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                             android:id="@+id/lastDateTime"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"

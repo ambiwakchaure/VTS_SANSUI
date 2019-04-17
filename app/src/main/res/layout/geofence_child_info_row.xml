@@ -78,7 +78,7 @@
             android:orientation="vertical">
 
 
-            <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+            <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                 android:id="@+id/txt_geo_fence_name"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -92,7 +92,7 @@
                 android:layout_marginTop="3pt"
                 android:layout_height="0.1pt"/>
 
-            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+            <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                 android:id="@+id/txt_geo_fence_address"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -116,7 +116,7 @@
                     android:layout_weight="1"
                     android:orientation="vertical">
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:id="@+id/infoTextIn"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -139,7 +139,7 @@
                     android:layout_weight="1"
                     android:orientation="vertical">
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:id="@+id/infoTextOut"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -161,13 +161,13 @@
                     android:layout_weight="1"
                     android:orientation="vertical">
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/radius"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:id="@+id/geofenceRadious"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -182,7 +182,7 @@
                 android:layout_marginTop="3pt"
                 android:orientation="horizontal">
 
-                <vts.snystems.sns.vts.fonts.MyButtonNormal
+                <vts.snystems.sns.sansui.fonts.MyButtonNormal
                     android:id="@+id/btn_geo_fence_view"
                     android:layout_width="fill_parent"
                     android:layout_height="15pt"
@@ -193,7 +193,7 @@
                     android:textAllCaps="false"
                     android:textColor="@color/colorWhite" />
 
-                <vts.snystems.sns.vts.fonts.MyButtonNormal
+                <vts.snystems.sns.sansui.fonts.MyButtonNormal
                     android:id="@+id/btn_geo_fence_delete"
                     android:layout_width="fill_parent"
                     android:layout_height="15pt"

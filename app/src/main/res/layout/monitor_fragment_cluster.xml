@@ -24,7 +24,7 @@
             android:layout_alignParentTop="true"
             tools:context="vts.snsystems.sns.vts.MapsActivity" />
 
-        <vts.snystems.sns.vts.fonts.MyButtonNormal
+        <vts.snystems.sns.sansui.fonts.MyButtonNormal
             android:id="@+id/buttonMapType"
             android:layout_width="40pt"
             android:layout_height="20pt"
@@ -32,7 +32,7 @@
             android:layout_alignParentStart="true"
             android:layout_marginBottom="16dp"
             android:layout_marginStart="22dp"
-            android:background="@drawable/back_gradint"
+            android:background="@color/colorPrimaryDark"
             android:text="Map View"
             android:textAllCaps="false"
             android:textColor="@color/colorWhite" />
@@ -44,6 +44,7 @@
     <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:layout_gravity="bottom|right">
 
         <android.support.design.widget.FloatingActionButton

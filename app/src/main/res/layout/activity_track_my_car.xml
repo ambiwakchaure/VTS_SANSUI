@@ -52,7 +52,7 @@
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                        <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                             android:id="@+id/vNumber"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -108,7 +108,7 @@
                         android:orientation="horizontal"
                         android:layout_marginStart="14dp" >
 
-                        <vts.snystems.sns.vts.fonts.MyButtonNormal
+                        <vts.snystems.sns.sansui.fonts.MyButtonNormal
                             android:id="@+id/buttonMapType"
                             android:layout_width="fill_parent"
                             android:layout_height="fill_parent"

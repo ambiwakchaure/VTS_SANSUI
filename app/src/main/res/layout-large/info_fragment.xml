@@ -28,7 +28,7 @@
                     android:layout_margin="10pt"
                     android:orientation="vertical">
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:id="@+id/imeiTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -44,14 +44,14 @@
                         android:layout_marginTop="3pt"
                         android:background="@color/colorHr" />
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5pt"
                         android:layout_marginTop="5pt"
                         android:text="@string/vehicle_name" />
 
-                    <vts.snystems.sns.vts.fonts.MyEditextNormal
+                    <vts.snystems.sns.sansui.fonts.MyEditextNormal
                         android:id="@+id/targetNameTxt"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
@@ -68,14 +68,14 @@
                         android:textSize="7pt" />
 
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5pt"
                         android:layout_marginTop="5pt"
                         android:text="@string/vehicle_number" />
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:id="@+id/deviceidTxt"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
@@ -90,7 +90,7 @@
                         android:textSize="7pt" />
 
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5pt"
@@ -102,7 +102,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <vts.snystems.sns.vts.fonts.MyEditextNormal
+                        <vts.snystems.sns.sansui.fonts.MyEditextNormal
                             android:id="@+id/overSpeedTxt"
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
@@ -120,7 +120,7 @@
                             android:maxLength="3"
                             android:textSize="7pt" />
 
-                        <vts.snystems.sns.vts.fonts.MyButtonNormal
+                        <vts.snystems.sns.sansui.fonts.MyButtonNormal
                             android:id="@+id/updateVNuBtn"
                             android:layout_width="fill_parent"
                             android:layout_height="15pt"
@@ -128,14 +128,14 @@
                             android:layout_marginRight="5pt"
                             android:layout_marginTop="5pt"
                             android:layout_weight="3"
-                            android:background="@drawable/back_gradint"
+                            android:background="@color/colorPrimaryDark"
                             android:text="Update"
                             android:textAllCaps="false"
                             android:textColor="@color/colorWhite" />
                     </LinearLayout>
 
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:id="@+id/fuelTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -151,7 +151,7 @@
                         android:layout_marginTop="3pt"
                         android:background="@color/colorHr" />
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:id="@+id/devicestatusTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -168,7 +168,7 @@
                         android:background="@color/colorHr" />
 
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:id="@+id/lastlocationTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -184,7 +184,7 @@
                         android:layout_marginTop="3pt"
                         android:background="@color/colorHr" />
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:id="@+id/lasttimeTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -200,7 +200,7 @@
                         android:layout_marginTop="3pt"
                         android:background="@color/colorHr" />
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:id="@+id/ignTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -216,7 +216,7 @@
                         android:layout_marginTop="3pt"
                         android:background="@color/colorHr" />
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:id="@+id/powerTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -232,7 +232,7 @@
                         android:layout_marginTop="3pt"
                         android:background="@color/colorHr" />
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:id="@+id/gpsTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -257,6 +257,7 @@
     <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:layout_gravity="bottom|right">
 
         <android.support.design.widget.FloatingActionButton

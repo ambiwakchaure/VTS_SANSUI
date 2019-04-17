@@ -19,7 +19,7 @@
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/back_gradint">
+                android:background="@color/colorPrimaryDark">
 
                 <LinearLayout
                     android:layout_width="fill_parent"
@@ -52,7 +52,7 @@
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                        <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                             android:id="@+id/vNumber"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -61,7 +61,7 @@
                             android:textColor="@color/colorWhite"
                             android:textStyle="bold" />
 
-                        <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                        <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                             android:id="@+id/lastDateTime"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -300,12 +300,12 @@
                         android:layout_marginStart="14dp"
                         android:orientation="horizontal">
 
-                        <vts.snystems.sns.vts.fonts.MyButtonNormal
+                        <vts.snystems.sns.sansui.fonts.MyButtonNormal
                             android:id="@+id/buttonMapType"
                             android:layout_width="fill_parent"
                             android:layout_height="fill_parent"
                             android:layout_weight="1"
-                            android:background="@drawable/back_gradint"
+                            android:background="@color/colorPrimaryDark"
                             android:text="Normal"
                             android:textAllCaps="false"
                             android:textColor="@color/colorWhite" />
@@ -340,7 +340,7 @@
                             android:layout_marginLeft="8pt"
                             android:orientation="horizontal">
 
-                            <vts.snystems.sns.vts.fonts.MyTextViewDigital
+                            <vts.snystems.sns.sansui.fonts.MyTextViewDigital
                                 android:id="@+id/playbackSpeedText"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -351,7 +351,7 @@
                                 android:textSize="25pt"
                                 android:textStyle="bold" />
 
-                            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                            <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="bottom"
@@ -360,7 +360,7 @@
                                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                                 android:textColor="@color/colorPrimaryDark" />
                         </LinearLayout>
-                        <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                        <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                             android:id="@+id/playbackDistance"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -416,7 +416,7 @@
                             android:textColor="@android:color/white" />
                     </FrameLayout>
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:id="@+id/playbackDateTime"
                         android:layout_width="wrap_content"
                         android:layout_height="15pt"

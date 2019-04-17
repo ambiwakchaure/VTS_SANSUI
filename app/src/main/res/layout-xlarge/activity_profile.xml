@@ -15,7 +15,7 @@
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="35pt"
-            android:background="@drawable/back_gradint">
+            android:background="@color/colorPrimaryDark">
 
             <LinearLayout
                 android:layout_width="fill_parent"
@@ -47,7 +47,7 @@
                     android:layout_weight="1"
                     android:gravity="center">
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/profile"
@@ -112,12 +112,12 @@
                             android:minWidth="40dp"
                             android:src="@drawable/ic_profile_demo" />
 
-                        <vts.snystems.sns.vts.fonts.MyButtonNormal
+                        <vts.snystems.sns.sansui.fonts.MyButtonNormal
                             android:layout_width="100pt"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="15pt"
-                            android:background="@drawable/back_gradint"
+                            android:background="@color/colorPrimaryDark"
                             android:gravity="center_vertical|center_horizontal"
                             android:onClick="captureImage"
                             android:text="Change Photo"
@@ -135,7 +135,7 @@
                             android:layout_marginRight="30dp"
                             android:layout_marginTop="8pt">
 
-                            <vts.snystems.sns.vts.fonts.MyEditextNormal
+                            <vts.snystems.sns.sansui.fonts.MyEditextNormal
                                 android:id="@+id/txt_first_name"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -159,7 +159,7 @@
                             android:layout_marginRight="30dp"
                             android:layout_marginTop="8pt">
 
-                            <vts.snystems.sns.vts.fonts.MyEditextNormal
+                            <vts.snystems.sns.sansui.fonts.MyEditextNormal
                                 android:id="@+id/txt_last_name"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -183,7 +183,7 @@
                             android:layout_marginRight="30dp"
                             android:layout_marginTop="8pt">
 
-                            <vts.snystems.sns.vts.fonts.MyEditextNormal
+                            <vts.snystems.sns.sansui.fonts.MyEditextNormal
                                 android:id="@+id/txt_email"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -206,7 +206,7 @@
                             android:layout_marginRight="30dp"
                             android:layout_marginTop="8pt">
 
-                            <vts.snystems.sns.vts.fonts.MyEditextNormal
+                            <vts.snystems.sns.sansui.fonts.MyEditextNormal
                                 android:id="@+id/txt_mobile"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -229,7 +229,7 @@
                             android:layout_marginRight="30dp"
                             android:layout_marginTop="8pt">
 
-                            <vts.snystems.sns.vts.fonts.MyEditextNormal
+                            <vts.snystems.sns.sansui.fonts.MyEditextNormal
                                 android:id="@+id/txt_address"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -244,7 +244,7 @@
 
                         </android.support.design.widget.TextInputLayout>
 
-                        <vts.snystems.sns.vts.fonts.MyButtonNormal
+                        <vts.snystems.sns.sansui.fonts.MyButtonNormal
                             android:id="@+id/btn_save"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -252,7 +252,7 @@
                             android:layout_marginLeft="60dp"
                             android:layout_marginRight="60dp"
                             android:layout_marginTop="8pt"
-                            android:background="@drawable/back_gradint"
+                            android:background="@color/colorPrimaryDark"
                             android:gravity="center_vertical|center_horizontal"
                             android:text="@string/save_changes"
                             android:textAllCaps="false"
@@ -274,6 +274,7 @@
     <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:layout_gravity="bottom|right">
 
         <android.support.design.widget.FloatingActionButton

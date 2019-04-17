@@ -46,7 +46,7 @@
                     android:layout_weight="1"
                     android:gravity="center">
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="SoS Contacts"
@@ -120,7 +120,7 @@
                                 android:weightSum="2">
 
 
-                                <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                                <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
 
@@ -138,7 +138,7 @@
                                 android:layout_height="wrap_content"
                                 android:theme="@style/TextLabel">
 
-                                <vts.snystems.sns.vts.fonts.MyEditextNormal
+                                <vts.snystems.sns.sansui.fonts.MyEditextNormal
                                     android:id="@+id/first_name_EditText"
                                     android:layout_width="fill_parent"
                                     android:layout_height="wrap_content"
@@ -159,7 +159,7 @@
                                 android:layout_height="wrap_content"
                                 android:theme="@style/TextLabel">
 
-                                <vts.snystems.sns.vts.fonts.MyEditextNormal
+                                <vts.snystems.sns.sansui.fonts.MyEditextNormal
                                     android:id="@+id/first_number_EditText"
                                     android:layout_width="fill_parent"
                                     android:layout_height="wrap_content"
@@ -282,7 +282,7 @@
                                 android:weightSum="2">
 
 
-                                <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                                <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_centerVertical="true"
@@ -301,7 +301,7 @@
                                 android:theme="@style/TextLabel">
 
 
-                                <vts.snystems.sns.vts.fonts.MyEditextNormal
+                                <vts.snystems.sns.sansui.fonts.MyEditextNormal
                                     android:id="@+id/second_name_EditText"
                                     android:layout_width="fill_parent"
                                     android:layout_height="wrap_content"
@@ -322,7 +322,7 @@
                                 android:layout_height="wrap_content"
                                 android:theme="@style/TextLabel">
 
-                                <vts.snystems.sns.vts.fonts.MyEditextNormal
+                                <vts.snystems.sns.sansui.fonts.MyEditextNormal
                                     android:id="@+id/second_number_EditText"
                                     android:layout_width="fill_parent"
                                     android:layout_height="wrap_content"
@@ -439,7 +439,7 @@
                                 android:gravity="center_vertical"
                                 android:weightSum="2">
 
-                                <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                                <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_centerVertical="true"
@@ -457,7 +457,7 @@
                                 android:layout_height="wrap_content"
                                 android:theme="@style/TextLabel">
 
-                                <vts.snystems.sns.vts.fonts.MyEditextNormal
+                                <vts.snystems.sns.sansui.fonts.MyEditextNormal
                                     android:id="@+id/third_name_EditText"
                                     android:layout_width="fill_parent"
                                     android:layout_height="wrap_content"
@@ -477,7 +477,7 @@
                                 android:layout_height="wrap_content"
                                 android:theme="@style/TextLabel">
 
-                                <vts.snystems.sns.vts.fonts.MyEditextNormal
+                                <vts.snystems.sns.sansui.fonts.MyEditextNormal
                                     android:id="@+id/third_number_EditText"
                                     android:layout_width="fill_parent"
                                     android:layout_height="wrap_content"

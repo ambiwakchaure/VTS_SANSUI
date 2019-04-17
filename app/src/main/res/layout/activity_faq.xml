@@ -7,7 +7,7 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:background="@drawable/back_gradint"
+        android:background="@color/colorPrimaryDark"
         android:layout_height="25pt">
 
         <LinearLayout
@@ -39,7 +39,7 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:gravity="center">
-                <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorWhite"

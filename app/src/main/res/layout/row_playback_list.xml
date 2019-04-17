@@ -36,7 +36,7 @@
                     android:layout_weight="8"
                     android:orientation="vertical">
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:id="@+id/txt_start_date"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
                         android:textColor="@color/colorText"
                         android:textSize="6pt" />
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:id="@+id/txt_end_date"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
             </LinearLayout>
 
 
-            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+            <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                 android:id="@+id/txt_dist_travel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
                 android:textStyle="bold" />
 
 
-            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+            <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                 android:id="@+id/txt_start_address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -103,7 +103,7 @@
                 android:textStyle="bold" />
 
 
-            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+            <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                 android:id="@+id/txt_end_address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

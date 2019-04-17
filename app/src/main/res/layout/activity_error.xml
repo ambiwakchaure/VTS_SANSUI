@@ -5,41 +5,36 @@
     android:layout_height="match_parent"
     app:theme="@style/AppTheme">
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/header_layout"
         android:layout_width="fill_parent"
         android:layout_height="25pt"
-        android:background="@drawable/back_gradint">
+        android:background="@color/colorPrimaryDark">
 
         <ImageView
             android:id="@+id/img_back"
-            android:layout_width="15pt"
-            android:layout_height="15pt"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
             android:clickable="true"
+            android:layout_weight="6"
+            android:layout_margin="6pt"
             android:onClick="goBack"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
             android:src="@drawable/ic_back" />
 
-        <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+        <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
             android:id="@+id/tv_title_page"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/img_back"
-            android:layout_alignTop="@+id/img_back"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
             android:text="Please submit bug report"
+            android:layout_weight="1"
+            android:gravity="center"
             android:textColor="@color/colorWhite"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
             android:textStyle="bold" />
 
 
-    </RelativeLayout>
+    </LinearLayout>
 
     <ScrollView
         android:id="@+id/ScrollView01"
@@ -56,7 +51,7 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp">
 
-            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+            <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                 android:id="@+id/error"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -67,7 +62,7 @@
         </RelativeLayout>
     </ScrollView>
 
-    <vts.snystems.sns.vts.fonts.MyButtonNormal
+    <vts.snystems.sns.sansui.fonts.MyButtonNormal
         android:id="@+id/send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

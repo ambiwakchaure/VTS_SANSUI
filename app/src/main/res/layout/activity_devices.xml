@@ -48,7 +48,7 @@
                     android:layout_weight="1"
                     android:gravity="center">
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:id="@+id/txtDeviceTypes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -104,7 +104,7 @@
                 android:weightSum="10">
 
 
-                <vts.snystems.sns.vts.fonts.MyEditextNormal
+                <vts.snystems.sns.sansui.fonts.MyEditextNormal
                     android:id="@+id/serachDataEditText"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"

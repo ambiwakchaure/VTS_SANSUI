@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="vts.snystems.sns.vts">
+    package="vts.snystems.sns.sansui">
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -9,7 +9,7 @@
     -->
 
     <permission
-        android:name="vts.snsystems.sns.vts.permission.MAPS_RECEIVE"
+        android:name="vts.snystems.sns.sansui.permission.MAPS_RECEIVE"
         android:protectionLevel="signature" />
 
     <uses-feature android:name="android.hardware.camera" />
@@ -18,15 +18,15 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
-    <uses-permission android:name="vts.snsystems.sns.vts.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="vts.snystems.sns.sansui.permission.MAPS_RECEIVE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!--<uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />-->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <supports-screens
@@ -37,16 +37,16 @@
         android:smallScreens="true" />
 
     <application
-        android:name=".classes.MyApplication"
+        android:name="vts.snystems.sns.sansui.classes.MyApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher"
+        android:roundIcon="@drawable/ic_launcher"
         android:supportsRtl="true"
 
         android:theme="@style/AppTheme">
         <activity
-            android:name=".activity.ActivitySplash"
+            android:name="vts.snystems.sns.sansui.activity.ActivitySplash"
             android:screenOrientation="portrait"
             android:resizeableActivity="false"
             android:supportsPictureInPicture="false"
@@ -60,7 +60,7 @@
 
 
         <activity
-            android:name=".activity.ActivityLogin"
+            android:name="vts.snystems.sns.sansui.activity.ActivityLogin"
             android:label="User Login"
             android:screenOrientation="portrait"
             android:resizeableActivity="false"
@@ -71,107 +71,107 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name="vts.snystems.sns.sansui.MapsActivity"
             android:label="@string/title_activity_maps"
             android:screenOrientation="portrait"
             android:resizeableActivity="false"
             android:supportsPictureInPicture="false"/>
         <activity
-            android:name=".activity.ActivityAbout"
+            android:name="vts.snystems.sns.sansui.activity.ActivityAbout"
             android:screenOrientation="portrait"
             android:resizeableActivity="false"
             android:supportsPictureInPicture="false"/>
         <activity
-            android:name=".activity.ActivityFAQ"
+            android:name="vts.snystems.sns.sansui.activity.ActivityFAQ"
             android:screenOrientation="portrait"
             android:resizeableActivity="false"
             android:supportsPictureInPicture="false"/>
         <activity
-            android:name=".activity.ActivityPlaybackTrackInfo"
+            android:name="vts.snystems.sns.sansui.activity.ActivityPlaybackTrackInfo"
             android:hardwareAccelerated="true"
             android:screenOrientation="portrait"
             android:resizeableActivity="false"
             android:supportsPictureInPicture="false"/>
         <activity
-            android:name=".activity.HomeActivity"
+            android:name="vts.snystems.sns.sansui.activity.HomeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:resizeableActivity="false"
             android:supportsPictureInPicture="false"/>
         <activity
-            android:name=".activity.ActivityVehicleList"
+            android:name="vts.snystems.sns.sansui.activity.ActivityVehicleList"
             android:screenOrientation="portrait"
             android:resizeableActivity="false"
             android:supportsPictureInPicture="false"/>
         <activity
-            android:name=".activity.ActivityAlertHistory"
+            android:name="vts.snystems.sns.sansui.activity.ActivityAlertHistory"
             android:screenOrientation="portrait"
             android:resizeableActivity="false"
             android:supportsPictureInPicture="false"/>
         <activity
-            android:name=".activity.ActivityProfile"
+            android:name="vts.snystems.sns.sansui.activity.ActivityProfile"
             android:screenOrientation="portrait"
             android:resizeableActivity="false"
             android:supportsPictureInPicture="false"/>
 
-        <service android:name=".services.GetNotifications" />
+        <service android:name="vts.snystems.sns.sansui.services.GetNotifications" />
 
         <activity
-            android:name=".errorHandler.ErrorActivity"
+            android:name="vts.snystems.sns.sansui.errorHandler.ErrorActivity"
             android:screenOrientation="portrait"
             android:resizeableActivity="false"
             android:supportsPictureInPicture="false"/>
         <activity
-            android:name=".activity.ActivityTravelSummary"
+            android:name="vts.snystems.sns.sansui.activity.ActivityTravelSummary"
             android:screenOrientation="portrait"
             android:resizeableActivity="false"
             android:supportsPictureInPicture="false"/>
         <activity
-            android:name=".activity.ActivityDistanceSummary"
+            android:name="vts.snystems.sns.sansui.activity.ActivityDistanceSummary"
             android:screenOrientation="portrait"
             android:resizeableActivity="false"
             android:supportsPictureInPicture="false"/>
         <activity
-            android:name=".activity.ActivityPlayBack"
+            android:name="vts.snystems.sns.sansui.activity.ActivityPlayBack"
             android:screenOrientation="portrait"
             android:resizeableActivity="false"
             android:supportsPictureInPicture="false"/>
         <activity
-            android:name=".activity.ActivityTrackMyCar"
+            android:name="vts.snystems.sns.sansui.activity.ActivityTrackMyCar"
             android:screenOrientation="portrait"
             android:resizeableActivity="false"
             android:supportsPictureInPicture="false"/>
         <activity
-            android:name=".activity.ActivityNearbyPlaces"
+            android:name="vts.snystems.sns.sansui.activity.ActivityNearbyPlaces"
             android:screenOrientation="portrait"
             android:resizeableActivity="false"
             android:supportsPictureInPicture="false"/>
         <activity
-            android:name=".sos.activity.ActivityAddContacts"
+            android:name="vts.snystems.sns.sansui.sos.activity.ActivityAddContacts"
             android:screenOrientation="portrait"
             android:resizeableActivity="false"
             android:supportsPictureInPicture="false"/>
         <activity
-            android:name=".geofence.activity.ActivityCreateGeofence"
+            android:name="vts.snystems.sns.sansui.geofence.activity.ActivityCreateGeofence"
             android:screenOrientation="portrait"
             android:resizeableActivity="false"
             android:supportsPictureInPicture="false"/>
         <activity
-            android:name=".geofence.activity.ActivityEditGeofence"
+            android:name="vts.snystems.sns.sansui.geofence.activity.ActivityEditGeofence"
             android:screenOrientation="portrait"
             android:resizeableActivity="false"
             android:supportsPictureInPicture="false"/>
         <activity
-            android:name=".geofence.activity.ActivityViewGeofence"
+            android:name="vts.snystems.sns.sansui.geofence.activity.ActivityViewGeofence"
             android:screenOrientation="portrait"
             android:resizeableActivity="false"
             android:supportsPictureInPicture="false"/>
         <activity
-            android:name=".geofence.activity.ActivityGeofenceList"
+            android:name="vts.snystems.sns.sansui.geofence.activity.ActivityGeofenceList"
             android:screenOrientation="portrait"
             android:resizeableActivity="false"
             android:supportsPictureInPicture="false"/>
-        <activity android:name=".activity.immobiliser.activity.ActivityImmobiliser"
+        <activity android:name="vts.snystems.sns.sansui.activity.immobiliser.activity.ActivityImmobiliser"
             android:screenOrientation="portrait"
             android:resizeableActivity="false"
             android:supportsPictureInPicture="false"></activity>

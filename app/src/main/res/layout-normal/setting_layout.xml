@@ -20,7 +20,7 @@
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
-            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+            <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5pt"
@@ -63,18 +63,18 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/imageView">
-                <vts.snystems.sns.vts.fonts.MyRadioButton
+                <vts.snystems.sns.sansui.fonts.MyRadioButton
                     android:id="@+id/mapRadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/map_view" />
-                <vts.snystems.sns.vts.fonts.MyRadioButton
+                <vts.snystems.sns.sansui.fonts.MyRadioButton
                     android:id="@+id/listRadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2pt"
                     android:text="@string/dashboard" />
-                <vts.snystems.sns.vts.fonts.MyRadioButton
+                <vts.snystems.sns.sansui.fonts.MyRadioButton
                     android:id="@+id/vStatusRadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -103,7 +103,7 @@
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
-            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+            <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5pt"
@@ -136,25 +136,25 @@
             android:visibility="gone"
             android:background="@color/colorGery10"
             android:orientation="vertical" >
-            <vts.snystems.sns.vts.fonts.MyCheckbox
+            <vts.snystems.sns.sansui.fonts.MyCheckbox
                 android:id="@+id/lowBatChk"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/low_battery" />
 
-            <vts.snystems.sns.vts.fonts.MyCheckbox
+            <vts.snystems.sns.sansui.fonts.MyCheckbox
                 android:id="@+id/overSpeedtChk"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/overspeed" />
 
-            <vts.snystems.sns.vts.fonts.MyCheckbox
+            <vts.snystems.sns.sansui.fonts.MyCheckbox
                 android:id="@+id/sosChk"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/sos" />
 
-            <vts.snystems.sns.vts.fonts.MyCheckbox
+            <vts.snystems.sns.sansui.fonts.MyCheckbox
                 android:id="@+id/pCutChk"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -182,7 +182,7 @@
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
-            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+            <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                 android:id="@+id/languageTxt"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -222,19 +222,19 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/imageView">
 
-                <vts.snystems.sns.vts.fonts.MyRadioButton
+                <vts.snystems.sns.sansui.fonts.MyRadioButton
                     android:id="@+id/enRadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/english" />
 
-                <vts.snystems.sns.vts.fonts.MyRadioButton
+                <vts.snystems.sns.sansui.fonts.MyRadioButton
                     android:id="@+id/hiRadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/hindi" />
 
-                <vts.snystems.sns.vts.fonts.MyRadioButton
+                <vts.snystems.sns.sansui.fonts.MyRadioButton
                     android:id="@+id/mrRadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -253,10 +253,11 @@
             android:layout_height="25pt"
             android:background="@drawable/ripple_effect"
             android:clickable="true"
+            android:visibility="gone"
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
-            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+            <vts.snystems.sns.sansui.fonts.MyTextViewNormal
 
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -289,7 +290,7 @@
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
-            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+            <vts.snystems.sns.sansui.fonts.MyTextViewNormal
 
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -319,6 +320,7 @@
     <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:layout_gravity="bottom|right">
 
         <android.support.design.widget.FloatingActionButton

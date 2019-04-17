@@ -44,7 +44,7 @@
                     android:layout_weight="1"
                     android:gravity="center">
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                    <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                         android:id="@+id/typeTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

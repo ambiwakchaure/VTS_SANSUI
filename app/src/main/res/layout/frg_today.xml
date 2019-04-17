@@ -18,7 +18,7 @@
             android:visibility="gone"
             android:background="@color/colorPrimaryDark">
 
-            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+            <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                 android:id="@+id/dateDetails"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

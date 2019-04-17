@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BENOSYS</string>
+    <string name="app_name">Sansui</string>
     <string name="welcome">Welcome</string>
     <string name="welcome_msg">Login to Continue</string>
     <string name="username">Username</string>
@@ -20,8 +20,10 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="title_activity_maps">Map</string>
     <string name="action_settings">Settings</string>
-
-
+    <string name="logout">Logout</string>
+    <string name="logout_msg">Do you want to logout?</string>
+    <string name="cancel">Cancel</string>
+    <string name="year">Year</string>
     <string-array name="lang">
         <item>English</item>
         <item>Hindi</item>
@@ -266,7 +268,7 @@
     <string name="change_photo">Change Photo</string>
     <string name="save_changes">Save Changes</string>
     <string name="profile">Profile</string>
-    <string name="overviewd">Benosys Pvt. Ltd. is a company engaged in design and development of innovative products and applications in the electronics industry. We are the global provider of collaborative IOT business solutions. With a legacy of 25 years in the industry, Benosys has come up with collaborative IOT business solutions, Real Time Tracking, Smart Modules and highly advanced electronic components. We deliver efficient, cost-effective solutions to our clients who look to adopt IOT practices to give their product and service offerings a quantum leap.</string>
+    <string name="overviewd">Established in the year, 1989, Sansui Electronics Private Limited is an ISO 9001:2000 certified company, engaged in manufacturing, exporting and supplying extensive range of weighing scales  and weighing systems. We are now one of the pioneers in vehicle tracking solution and to attain maximum satisfaction of clients, we provide after sales service with the help of our trained and experienced technicians.</string>
     <string name="add_sost">Add Sos Contact</string>
     <string name="sos_add">SoS contact not found, click Ok to add SoS contact</string>
 

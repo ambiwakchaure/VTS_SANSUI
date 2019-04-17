@@ -15,7 +15,7 @@
             app:tabIndicatorHeight="5dp"
             app:tabIndicatorColor="#ffffff"
             style="@style/MyTabLayout"
-            android:background="@drawable/back_gradint"
+            android:background="@color/colorPrimaryDark"
             app:tabGravity="fill"/>
     </android.support.design.widget.AppBarLayout>
 

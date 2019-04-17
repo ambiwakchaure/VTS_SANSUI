@@ -16,7 +16,7 @@
             android:layout_height="15pt"
             android:gravity="center"
             android:background="@color/colorPrimaryDark">
-            <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+            <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                 android:id="@+id/vNumberTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -32,7 +32,7 @@
 
 
 
-        <vts.snystems.sns.vts.fonts.MyTextViewNormal
+        <vts.snystems.sns.sansui.fonts.MyTextViewNormal
             android:id="@+id/deviceStatusTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/vSpeedTextView"/>
 
-        <vts.snystems.sns.vts.fonts.MyTextViewNormal
+        <vts.snystems.sns.sansui.fonts.MyTextViewNormal
             android:id="@+id/lastLocationTextView"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"

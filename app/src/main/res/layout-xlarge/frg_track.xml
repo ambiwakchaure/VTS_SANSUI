@@ -29,7 +29,7 @@
             android:layout_alignParentStart="true"
             android:layout_marginBottom="27dp"
             android:layout_marginStart="20dp"
-            android:background="@drawable/back_gradint"
+            android:background="@color/colorPrimaryDark"
             android:text="Button"
             android:textAllCaps="false"
             android:textColor="@color/colorWhite" />
@@ -135,7 +135,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="2pt" />
 
-                    <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                    <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                         android:id="@+id/locationTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -163,36 +163,39 @@
                     <LinearLayout
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
+                        android:layout_marginTop="2dp"
                         android:gravity="center_vertical"
                         android:orientation="horizontal">
 
-                        <vts.snystems.sns.vts.fonts.MyTextViewNormal
-                            android:layout_width="0dp"
+                        <vts.snystems.sns.sansui.fonts.MyTextViewNormal
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:gravity="center"
+                            android:layout_weight="1"
                             android:text="@string/speed"
                             android:textColor="#000"
-                            android:textSize="8pt" />
+                            android:textSize="10pt" />
 
-                        <vts.snystems.sns.vts.fonts.MyTextViewNormal
-                            android:layout_width="0dp"
+
+                        <vts.snystems.sns.sansui.fonts.MyTextViewNormal
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center"
                             android:text="@string/odometer"
-                            android:textColor="#000"
-                            android:textSize="8pt" />
-
-                        <vts.snystems.sns.vts.fonts.MyTextViewNormal
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:textColor="#000"
                             android:gravity="center"
+                            android:textSize="10pt" />
+                        <vts.snystems.sns.sansui.fonts.MyTextViewNormal
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:text="@string/fuel"
                             android:textColor="#000"
-                            android:textSize="8pt" />
+                            android:gravity="center"
+                            android:textSize="10pt" />
+
+
+
                     </LinearLayout>
 
                     <LinearLayout
@@ -208,7 +211,7 @@
                             android:layout_weight="1"
                             android:gravity="center">
 
-                            <vts.snystems.sns.vts.classes.ArcProgress
+                            <vts.snystems.sns.sansui.classes.ArcProgress
                                 android:id="@+id/arcprogress_speed"
                                 android:layout_width="120dp"
                                 android:layout_height="120dp"
@@ -231,7 +234,7 @@
                             android:layout_weight="1"
                             android:gravity="center">
 
-                            <vts.snystems.sns.vts.classes.ArcProgress
+                            <vts.snystems.sns.sansui.classes.ArcProgress
                                 android:id="@+id/arcprogress_odometer"
                                 android:layout_width="120dp"
                                 android:layout_height="120dp"
@@ -253,7 +256,7 @@
                             android:layout_weight="1"
                             android:gravity="center">
 
-                            <vts.snystems.sns.vts.classes.ArcProgress
+                            <vts.snystems.sns.sansui.classes.ArcProgress
                                 android:id="@+id/arcprogress_fuel"
                                 android:layout_width="120dp"
                                 android:layout_height="120dp"
@@ -292,7 +295,7 @@
 
                                 app:srcCompat="@drawable/ic_ign_on" />
 
-                            <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                            <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/ign"
@@ -315,7 +318,7 @@
 
                                 app:srcCompat="@drawable/ic_power_on" />
 
-                            <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                            <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                                 android:id="@+id/image_live_power"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -339,7 +342,7 @@
 
                                 app:srcCompat="@drawable/ic_gps_on" />
 
-                            <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                            <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/gps"
@@ -361,7 +364,7 @@
 
                                 app:srcCompat="@drawable/ic_ac" />
 
-                            <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                            <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="AC"
@@ -385,7 +388,7 @@
                             android:layout_weight="1"
                             android:orientation="vertical">
 
-                            <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                            <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                                 android:layout_width="fill_parent"
                                 android:layout_height="fill_parent"
                                 android:layout_weight="1"
@@ -399,7 +402,7 @@
                                 android:textColor="#000"
                                 android:textSize="8pt" />
 
-                            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                            <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                                 android:id="@+id/lastTripDistane"
                                 android:layout_width="fill_parent"
                                 android:layout_height="fill_parent"
@@ -418,7 +421,7 @@
                             android:layout_weight="1"
                             android:orientation="vertical">
 
-                            <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                            <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                                 android:layout_width="fill_parent"
                                 android:layout_height="fill_parent"
                                 android:layout_weight="1"
@@ -429,7 +432,7 @@
                                 android:textColor="#000"
                                 android:textSize="8pt" />
 
-                            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                            <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                                 android:id="@+id/lastTripParkTime"
                                 android:layout_width="fill_parent"
                                 android:layout_height="fill_parent"
@@ -448,7 +451,7 @@
                             android:layout_weight="1"
                             android:orientation="vertical">
 
-                            <vts.snystems.sns.vts.fonts.MyTextViewSmiBold
+                            <vts.snystems.sns.sansui.fonts.MyTextViewSmiBold
                                 android:layout_width="fill_parent"
                                 android:layout_height="fill_parent"
                                 android:layout_weight="1"
@@ -458,7 +461,7 @@
                                 android:textColor="#000"
                                 android:textSize="8pt" />
 
-                            <vts.snystems.sns.vts.fonts.MyTextViewNormal
+                            <vts.snystems.sns.sansui.fonts.MyTextViewNormal
                                 android:id="@+id/lastTripDuration"
                                 android:layout_width="fill_parent"
                                 android:layout_height="fill_parent"
